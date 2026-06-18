@@ -1,0 +1,274 @@
+
+.follUs{
+    width: 100%;
+    /* background-color: #8D1FD4; */
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-image: url(../bgImg.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* padding: 20px; */
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.follUs .startingH1tag{
+    color: #C29C3C;
+}
+
+.follUs .ptagAfterH1tag{
+    color: rgb(155, 154, 154);
+}
+
+.follUs h4{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+    width: 90%;
+}
+
+.follUs .ptagAfterH1tag{
+    
+    text-align: center;
+    width: 90%;
+}
+
+.follUs .plusPointsSec{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0px 10px;
+}
+
+.follUs .plusPointsSec .ppCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+    /* background-color: white; */
+    color: rgb(137, 135, 135);
+    padding: 10px 15px;
+    border-radius: 20px;
+    border: 1px solid #C29C3C;
+    /* box-shadow: inset 0px 0px 10px #C29C3C; */
+}
+.plusPointsSec .ppCard .ppCardLogo{
+    background-color: #C29C3C;
+    color: white;
+    display: flex;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.plusPointsSec .ppCard .ppCardDetails{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 2px;
+}
+
+.plusPointsSec .ppCard .ppCardDetails h5{
+    color: #C29C3C;
+    font-size: 17px;
+}
+
+.follUs .subscribeSec{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+    padding: 10px 20px;
+    border: 1px solid #C29C3C;
+    border-radius: 20px;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.follUs .subscribeSec .subInputSec{
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+
+    
+}
+
+.subscribeSec .subInputSec div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 5px; */
+    /* padding: 10px 0px; */
+    /* padding-right: 10px; */
+    border-radius: 10px;
+    overflow: hidden;
+    /* border: 1px solid white; */
+    /* background-color: rgba(246, 216, 162, 0.397); */
+    
+}
+.subscribeSec .subInputSec div span{
+    background-color: #C29C3C;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.subscribeSec .subInputSec div input{
+    padding: 10px 15px;
+    background-color: rgb(223, 221, 221);
+    color: black;
+    border: none;
+    font-size: 15px;
+    outline: none;
+    width: 430px;
+    transition: all 0.3s ease;
+    &:hover{
+        background-color: white;
+    }
+    
+}
+
+.subscribeSec .subInputSec button{
+    background-color: #C29C3C;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    border: 1px solid #C29C3C;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover{
+        background-color: white;
+        color: #C29C3C;
+        
+    }
+}
+
+.follUs .subscribeSec p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: rgb(82, 81, 81);
+}
+
+.follUs .follUsLogo{
+    width: 90%;
+    /* height: 200px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* gap: 20px; */
+    /* padding-top: 10px; */
+}
+
+.follUsLogo .logoSec{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: 100%;
+    padding-right:10px ;
+}
+ 
+.follUsLogo .logoSec div{
+    width: 45px;
+    height: 45px;
+    font-size: 30px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #C29C3C;
+    /* background-color: white; */
+    border: 1px solid #C29C3C;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    box-sizing: content-box;
+    box-shadow: 0px 0px 10px black;
+}
+
+.follUsLogo .logoSec div:hover{
+    color: white;
+}
+
+.follUsLogo .logoSec .log1:hover{
+    background-color: black;
+}
+
+.follUsLogo .logoSec .log2:hover{
+    background-color: black;
+}
+
+.follUsLogo .logoSec .log3:hover{
+    background-color: red;
+}
+
+.follUsLogo .logoSec .log4:hover{
+    background-color: rgb(67, 67, 246);
+}
+
+.follUsLogo .logoSec .log5:hover{
+    background-color: #BD081C;
+}
+
+.follUsLogo .logoSec .log6:hover{
+    background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+    );
+}
+
+.follUsLogo .logoSec .log7:hover{
+     background: conic-gradient(from 70deg,red  ,yellow, blue, green );
+    
+}
+
+@media (max-width:768px){
+
+    .follUs .subscribeSec{
+        width: 85%;
+    }
+    .follUs .subscribeSec .subInputSec{
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        /* flex-wrap: wrap; */
+    }
+
+    .follUs .subscribeSec .subInputSec div{
+        width: 100%;
+        justify-content: start;
+    }
+
+    .follUs .subscribeSec .subInputSec div input{
+        width: 95%;
+    }
+}

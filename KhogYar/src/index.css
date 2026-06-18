@@ -1,0 +1,15 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body{
+    background-color: #0D0900;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
