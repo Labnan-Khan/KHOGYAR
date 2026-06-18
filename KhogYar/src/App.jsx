@@ -5,7 +5,7 @@ import Footera from './components/footer/Footera'
 import ScrollToTop from './components/scrollToTop/ScrollToTop'
 import Recipe from './components/recipe/Recipe'
 import Contact from './components/contact/Contact'
-import Home from './components/home/home'
+import Home from './components/home/Home'
 
 function App() {
   return (
