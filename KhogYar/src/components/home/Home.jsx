@@ -4,7 +4,10 @@ function Home() {
   return (
     <>
         <div className='heroSection'>
-            <h1>heroSection in home page</h1>
+          <div>
+              <h1>KHogyar</h1>
+          </div>
+            
 
         </div>
     </>

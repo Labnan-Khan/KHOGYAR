@@ -3,9 +3,26 @@
     min-height: 80vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 20px;
     /* background-color: gold; */
-    color: #C29C3C;
+    /* color: #C29C3C; */
+    background-image: url(../../assets/_84550041_bar.jpg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.heroSection div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:  monospace;
+    color: black;
+    text-shadow: -5px 5px 10px gold;
+    font-size: clamp(3rem, 10vw, 12rem);;
+    font-weight: 900;
+    text-transform:uppercase;
+    mix-blend-mode: screen;
 }

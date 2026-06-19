@@ -6,6 +6,7 @@ import ScrollToTop from './components/scrollToTop/ScrollToTop'
 import Recipe from './components/recipe/Recipe'
 import Contact from './components/contact/Contact'
 import Home from './components/home/Home'
+import BRJournal from './components/brJournal/BRJournal'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
     <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/product" element={<Recipe />} />
+        <Route path="/journnels" element={<BRJournal />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Home />} />
       </Routes>
