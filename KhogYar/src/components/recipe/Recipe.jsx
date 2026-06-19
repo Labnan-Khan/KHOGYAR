@@ -6,9 +6,9 @@ import { MdLunchDining } from 'react-icons/md'
 import { GiCampCookingPot, GiCook, GiHotMeal, GiMeal, GiSandsOfTime } from 'react-icons/gi'
 import { LuSalad } from 'react-icons/lu'
 import { TbSaladFilled, TbSoupFilled } from 'react-icons/tb'
-import { FaStar } from 'react-icons/fa'
+import { FaFire, FaStar } from 'react-icons/fa'
 import { TiArrowLeftThick } from 'react-icons/ti'
-import img1 from './Gemini_Generated_Image_eq1j2deq1j2deq1j.png'
+import img1 from '../../assets/chocolet.png'
 // import img2 from '../../assets/Beef_NihariImg.png'
 import recipePageBgImg1 from './recipeheroBgImg1.png'
 import recipePageBgImg2 from './recipeheroBgImg2.png'
@@ -16,6 +16,7 @@ import recipePageBgImg3 from './recipeheroBgImg3.png'
 
 
 import { RiGroupLine } from 'react-icons/ri'
+import { LiaWalletSolid } from 'react-icons/lia'
 function Recipe() {
 
     const recipeItems = {
@@ -2982,24 +2983,26 @@ function Recipe() {
             
             {slectedREcipeArreyItems.map((item,index) => {
                 return(
-                        <div className='recipeItem'>
 
-                <div className='itemImg'></div>
+                  <div className='recipeItem'>
 
-                <div className='itemDetalSec'>
-                    <h4>{item.cardHeading}</h4>
-                    <div className='itemReview'>
+                    <div className='itemImg'></div>
+
+                    <div className='itemDetalSec'>
+                      <h4>{item.cardHeading}</h4>
+                      <div className='itemReview'>
                         <div className='iconDiv'><FaStar /> <span>{item.rating[0]} {`(${item.rating[1]})`}</span></div>
-                        <p> {item.calories} cal</p>
-                    </div>
+                        <p> <span><FaFire/></span> {item.calories} cal</p>
+                      </div>
 
-                    <div className='btnSec'>
+                      <div className='btnSec'>
                         
-                        <div><GiCampCookingPot />
-                            <p>{item.cookingTime} mins</p>
+                        <div>
+                          <LiaWalletSolid />
+                            <p>{item.cookingTime}$</p>
                         </div>
-                        <button onClick={()=>{setShowFullRecipePage(true); setFullRecipeD(item)}}>View Recipe</button>
-                    </div>
+                        <button onClick={()=>{setShowFullRecipePage(true); setFullRecipeD(item)}}>Item Details</button>
+                      </div>
                 </div>
                 
             </div>

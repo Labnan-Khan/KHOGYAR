@@ -47,22 +47,25 @@
     align-items: center;
     text-align: center;
     gap: 10px;
+    padding-top: 10px;
 }
-
+.recipe .recipeHeroSec .herosecHeading .startingH1tag{
+    color: #C29C3C;
+}
 .recipe .recipeHeroSec .herosecHeading button{
     /* width: 100px; */
     color: white;
     font-size: 19px;
     font-weight: 400;
     padding: 10px;
-    border: 2px solid #1A5C42;
+    border: 2px solid #C29C3C;
     border-radius: 10px;
-    background-color: #1A5C42;
+    background-color: #C29C3C;
     transition: all 0.3s ease;
 
     &:hover{
         background-color: white;
-        color: #1A5C42;
+        color: #C29C3C;
     }
 
 }
@@ -74,13 +77,13 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    border-top: 1px solid white;
+    /* border-top: 1px solid white; */
     border-top-left-radius: 40px;
     border-top-right-radius: 40px;
     padding: 40px 0px;
     /* transform: translateY(-20px); */
     /* background-color: white; */
-    box-shadow: 0px -5px 5px #030b085e;
+    /* box-shadow: 0px -5px 5px #030b085e; */
 }
 
 .recipe .recipeBody .catrgoryP{
@@ -88,7 +91,7 @@
     width: 90%;
     text-align: center;
     font-weight: 900;
-    color: #1A5C42;
+    color: #C29C3C;
     width: 90%;
     /* padding-left: 20px; */
 }
@@ -109,23 +112,24 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
-    background-color: white;
-    border: 1px solid #1A5C42;
+    /* background-color: #c29c3c27; */
+    border: 1px solid #C29C3C;
     border-radius: 10px;
     padding: 5px;
     font-size: 15px;
-    color: rgb(115, 113, 113);
+    color: white;
     padding: 10px;
     &:hover{
         /* background-color: #1A5C42; */
-        color: #1A5C42;
-        box-shadow:  0px 0px 5px #1A5C42;
+        /* color: #1A5C42; */
+        box-shadow: inset  0px 0px 5px #C29C3C;
     }
 }
 .recipe .recipeBody .categorySec .categoryBtn.activeBtn{
-    background-color: #1A5C42;
+    background-color: #C29C3C;
     color: white;
     box-shadow: none;
+    border: 1px solid white;
 }
 .recipeBody .categorySec .categoryBtn div{
     font-size: 30px;
@@ -148,8 +152,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #1A5C42;
-    background-color: white;
+    border: 2px solid #C29C3C;
+    /* background-color: white; */
     overflow: hidden;
     border-radius: 10px;
     gap: 10px;
@@ -158,14 +162,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #1A5C42;
+    background-color: #C29C3C;
     color: white;
     font-size: 30px;
     padding: 10px;
 
 }
 .recipe .recipeBody .slectedCategory h3{
-    color: #1A5C42;
+    color: #C29C3C;
     font-size: 20px;
     padding-right: 10px;
 }
@@ -182,7 +186,7 @@
 .recipe .recipeBody .recipeItemsSec .recipeItem{
     /* width: fit-content; */
     height: 180px;
-    background-color: white;
+    /* background-color: white; */
     padding: 10px;
     /* padding-top: 0px; */
     display: flex;
@@ -193,20 +197,20 @@
     border-radius: 20px;
     overflow: hidden;
     position: relative;
-    border: 1px solid white;
-    box-shadow:inset 0px 0px 10px rgb(180, 179, 179);
+    border: 1px solid #C29C3C;
+    box-shadow:inset 0px 0px 10px #C29C3C;
     transition: all 0.3s ease;
     &:hover{
-        border: 1px solid #1A5C42;
+        border: 1px solid #C29C3C;
     }
 
 }
 
 .recipe .recipeBody .recipeItemsSec .recipeItem .itemImg{
-    background-image: url(./Gemini_Generated_Image_eq1j2deq1j2deq1j.png);
+    background-image: url(../../assets/chocolet.png);
     width: 120px;
     width: 30%;
-    aspect-ratio: 9/9;
+    aspect-ratio: 12/9;
     /* height: 100px; */
     background-position: center;
     background-size: cover;
@@ -217,7 +221,7 @@
 
 }
 .recipe .recipeBody .recipeItemsSec .recipeItem:hover .itemImg{
-        transform:  rotate(50deg) ;
+        /* transform:  rotate(50deg) ; */
     }
 
 .recipeBody .recipeItemsSec .recipeItem .itemDetalSec{
@@ -233,7 +237,7 @@
 
 .recipeBody .recipeItemsSec .recipeItem .itemDetalSec h4{
     font-size: 20px;
-    color: #1A5C42;
+    color: #C29C3C;
 }
 
 .recipeItemsSec .recipeItem .itemDetalSec .itemReview{
@@ -259,10 +263,23 @@
 }
 
 .recipeItemsSec .recipeItem .itemDetalSec .itemReview p{
-    background-color: #1A5C42;
-    color: white;
+    /* background-color: white; */
+    color: #C29C3C;
+    border: 1px solid #C29C3C;
     padding: 4px;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    padding: 10px;
+}
+.recipeItemsSec .recipeItem .itemDetalSec .itemReview p span{
+    color: rgb(226, 69, 69);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 .recipeItemsSec .recipeItem .itemDetalSec .btnSec{
@@ -279,7 +296,7 @@
     justify-content: center;
     align-items: center;
     /* background-color: #1A5C42; */
-    color: rgb(137, 3, 3);
+    color: #C29C3C;
     padding: 0px;
     /* border: 1px solid #1A5C42; */
     padding-left: 5px;
@@ -289,8 +306,8 @@
 }
 
 .recipeItem .itemDetalSec .btnSec div p{
-    background-color: white;
-    color: #1A5C42;
+    /* background-color: white; */
+    color: white;
     font-size: 15px;
     /* padding: 5px; */
     border-top-right-radius: 5px;
@@ -299,9 +316,9 @@
 }
 
 .recipeItem .itemDetalSec .btnSec button{
-    border: 2px solid #1A5C42;
-    background-color: #1A5C42;
-    color: white;
+    border: 1px solid white;
+    background-color: #b3830a;
+    color: black;
     font-size: 16px;
     padding: 5px;
     border-radius: 5px;
@@ -309,7 +326,7 @@
 
     &:hover{
         background-color: white;
-        color: #1A5C42;
+        color: #C29C3C;
     }
 }
 
@@ -322,6 +339,7 @@
     top: 0px;
     z-index: 1000;
     background-color: rgb(0, 0, 0);
+    color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -378,7 +396,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #1A5C42;
+    background-color: #C29C3C;
     border-top-right-radius: 40%;
     border-bottom-right-radius: 40%;
     padding: 10px;
@@ -396,7 +414,7 @@
 }
 
 .recipeSec .recipeDetails .recipeHeader .headerBottom h4{
-    color: #1A5C42;
+    color: #C29C3C;
     font-size: 25px;
 }
 
@@ -419,14 +437,14 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
-    border: 1px solid #1A5C42;
+    border: 1px solid #C29C3C;
     /* padding: 5px; */
     border-radius: 10px;
     overflow: hidden;
 }
 
 .recipeHeader .headerBottom .headerBottomIcon div span{
-    background-color: #1A5C42;
+    background-color: #C29C3C;
     color: white;
     font-size: 30px;
     width: 100%;
@@ -441,7 +459,7 @@
     padding-top: 0px;
 }
 .brP{
-    background-color: #1A5C42;
+    background-color: #C29C3C;
     color: white;
     padding: 10px;
     border-radius: 10px;
@@ -467,7 +485,7 @@
 
 .recipemain .RecipeIngredients, .recipemain .recipeSteps{
     width: 90%;
-    border: 2px solid #1A5C42;
+    border: 2px solid #C29C3C;
     background-color: white;
     padding: 10px;
     border-radius: 20px;
@@ -475,7 +493,7 @@
 }
 .recipemain .RecipeIngredients h5, .recipemain .recipeSteps h5{
     font-size: 20px;
-    color: #1A5C42;
+    color: #C29C3C;
 }
 .recipemain .RecipeIngredients ul li{
     list-style:inside;
@@ -505,7 +523,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #1A5C42;
+    border: 1px solid #C29C3C;
+    color: black;
     border-radius: 10px;
     padding: 5px;
     font-size: 15px;
@@ -513,7 +532,7 @@
 }
 .recipeFooter h4{
     font-size: 20px;
-    color: #1A5C42;
+    color: #C29C3C;
 
 }
 
