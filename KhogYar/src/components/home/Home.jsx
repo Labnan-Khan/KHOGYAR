@@ -158,6 +158,43 @@ function Home() {
         </div>
       </div>
 
+      <div className='homeProductShowcase'>
+        <h1>Signature Product Showcase</h1>
+        <p className='headingP'>Hand-selected from Pakistan's orchards and valleys. Each product named for its origin, its season, and its singular character.</p>
+
+        <div className='showcaseOItemSec'>
+
+          <div className='showcaseLeftSec'>
+            <h4>SIGNATURE HARVEST</h4>
+            <p>Each product named for its origin, its season, and its singular character.</p>
+
+            <div className='showcaseLeftSecDiv'>
+              <h5>The Harvest Box</h5>
+              <h5>The Collector's Edition</h5>
+              <h5>The Atelier Parcel</h5>
+              <h5>The Celebration Box</h5>
+            </div>
+
+          </div>
+
+          <div className='showcaseRightSec'>
+            <div className='showcaseRightSecImg'></div>
+            <h3>Chilghoza Pine Nuts</h3>
+            <p className='startingP'>Hand-gathered from 2,500m forests. The rarest pine nut on earth, slow-dried in mountain air.</p>
+            <div className='showcaseRifhtSecBottom'>
+              <span>
+                <h6>ORIGIN</h6>
+                <p>Chighoza</p>
+              </span>
+              <span>
+                <h6>HARVEST</h6>
+                <p>2025</p>
+              </span>
+            </div>
+          </div>
+           
+        </div>
+      </div>
 
       <Testimonial />
 

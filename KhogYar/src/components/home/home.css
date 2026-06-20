@@ -400,6 +400,120 @@
 }
 
 
+.homePage .homeProductShowcase{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.homePage .homeProductShowcase .showcaseOItemSec{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 40px;
+
+}
+
+.homePage .homeProductShowcase .showcaseOItemSec .showcaseLeftSec{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    font-size: 17px;
+    color: rgb(160, 159, 159);
+}
+
+.homePage .homeProductShowcase .showcaseOItemSec .showcaseLeftSec h4{
+    color: #C29C3C;
+    font-size: 20px;
+}
+
+
+.showcaseOItemSec .showcaseLeftSec .showcaseLeftSecDiv{
+    margin-top: 30px;
+}
+.showcaseOItemSec .showcaseLeftSec .showcaseLeftSecDiv h5{
+    /* max-width: 90%; */
+    /* border: 1px solid #c29c3c5d; */
+    border-left: 3px solid #c29c3c61;
+    padding: 10px;
+    padding-right: 0px;
+    font-size: 17px;
+    font-weight: 100;
+    /* margin-top: 1px; */
+    color: rgb(129, 128, 128);
+    transition: all 0.3s ease;
+
+    &:hover{
+        /* border: 1px solid #c29c3c7d; */
+        border-left: 3px solid #C29C3C;
+        color: #C29C3C;
+    }
+}
+
+.homePage .homeProductShowcase .showcaseOItemSec .showcaseRightSec{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: white;
+}
+
+.homePage .homeProductShowcase .showcaseOItemSec .showcaseRightSec .showcaseRightSecImg{
+    width: 100%;
+    aspect-ratio: 12/8;
+    background-image: url(../../assets/heroImg1.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.homePage .homeProductShowcase .showcaseOItemSec .showcaseRightSec h3{
+    color: black;
+    font-size: 20px;
+    width: 90%;
+
+}
+
+.showcaseOItemSec .showcaseRightSec .startingP{
+    color: rgb(119, 117, 117);
+    width: 90%;
+}
+
+.showcaseOItemSec .showcaseRightSec .showcaseRifhtSecBottom{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid #c29c3c82;
+    padding: 10px;
+    color: rgb(74, 73, 73);
+    font-size: 15px;
+}
+
+.showcaseOItemSec .showcaseRightSec .showcaseRifhtSecBottom span{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.showcaseOItemSec .showcaseRightSec .showcaseRifhtSecBottom span h6{
+    color: #C29C3C;
+    font-size: 16px;
+}
+
 
 @media (max-width:768px){
 
