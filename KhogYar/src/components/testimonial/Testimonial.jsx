@@ -40,8 +40,8 @@ function Testimonial() {
     <>
         <div className='testimonial'>
             <div className='testiUSec'>
-                <h4 className='testiUSecH4'> Edits Pay Off </h4>
-                <p className='testiUSecP1'>Trusted by Creators. Backed by Results.</p>
+                <h1 className='testiUSecH4'> Edits Pay Off </h1>
+                <p className='headingP'>Trusted by Creators. Backed by Results.</p>
                 <div className='testiBoxSec'>
 
                     <div className='testiTrack'>
