@@ -15,6 +15,7 @@
     align-items: center;
     gap: 0px;
     /* background-color: white; */
+    /* color: black; */
     padding-bottom: 40px;
 }
 
@@ -70,6 +71,54 @@
 
 }
 
+.recipe .recipeHeroSec .herosecHeading .herheadindClintShowcaseSec{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding-top: 10px;
+}
+
+.recipe .recipeHeroSec .herosecHeading .herheadindClintShowcaseSec .imgSecofClinte{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* padding-top: 5px; */
+}
+
+.recipe .recipeHeroSec .herosecHeading .herheadindClintShowcaseSec .imgSecofClinte span{
+    border: 2px solid rgb(245, 242, 242);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* background-image: url(../testimonial/testimonailImg11.jpeg); */
+    background-size: cover;
+    background-position: top center;
+    position: absolute;
+    
+}
+
+.recipe .recipeHeroSec .herosecHeading .herheadindClintShowcaseSec .imgSecofClinte span:nth-child(1){
+    background-image: url(../testimonial/testimonailImg11.jpeg);
+    left: 0px;
+    /* border: 1px solid rgb(186, 7, 7); */
+}
+.recipe .recipeHeroSec .herosecHeading .herheadindClintShowcaseSec .imgSecofClinte span:nth-child(2){
+    background-image: url(../testimonial/testimonailImg8.jpeg);
+    left: 15px;
+    border: 2px solid rgb(248, 250, 249);
+}
+.recipe .recipeHeroSec .herosecHeading .herheadindClintShowcaseSec .imgSecofClinte span:nth-child(3){
+    background-image: url(../testimonial/testimonailImg2.jpeg);
+    left: 30px;
+}
+.recipe .recipeHeroSec .herosecHeading .herheadindClintShowcaseSec .imgSecofClinte span:nth-child(4){
+    background-image: url(../testimonial/testimonailImg1.jpeg);
+    left: 45px;
+    /* border: 2px solid #C29C3C; */
+}
+
 .recipe .recipeBody{
     width: 100%;
     display: flex;
@@ -119,6 +168,7 @@
     font-size: 15px;
     color: white;
     padding: 10px;
+    cursor: pointer;
     &:hover{
         /* background-color: #1A5C42; */
         /* color: #1A5C42; */
@@ -146,6 +196,10 @@
     font-size: 13px;
     color: rgb(65, 64, 64);
     margin-top: 15px;
+}
+
+.recipe .recipeBody .slectedCategory p{
+    color: white;
 }
 
 .recipe .recipeBody .slectedCategory div{

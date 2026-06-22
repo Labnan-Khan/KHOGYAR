@@ -4,18 +4,46 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 50px 0px;
+    /* padding: 50px 0px; */
     position: relative;
 }
 
 .brJournal .startingH1tag{
     color: gold;
-    text-shadow: 0px 0px 10px black;
+    font-size: 50px;
+    /* text-shadow: 0px 0px 10px black; */
 }
 .brJournal .ptagAfterH1tag{
     padding-top: 10px;
-    color: white;
+    font-size: 20px;
+    color: rgb(157, 154, 154);
     text-shadow: 0px 0px 5px black;
+}
+.brJournal .journelHeroSec{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: black;
+}
+
+.brJournal .journelHeroSec .journelHeroSecleftSec{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.brJournal .journelHeroSec .journelHeroSecRightSec{
+    /* border: 1px solid black; */
+    width: 50%;
+    aspect-ratio: 9/9;
+    background-image: url(../../assets/jornelherosecImg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .brJournal .backgroundVideoAnimationsec{
@@ -75,7 +103,7 @@
 }
 
 .brJournal .brJournalCardSec .brJournalCardSecItem{
-    background-color: rgba(255, 255, 255, 0.065);
+    /* background-color: rgba(255, 255, 255, 0.065); */
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -85,16 +113,22 @@
     border-radius: 20px;
     color: #e4e4d6;
     overflow: hidden;
-    transition: all 0.3s ease;
-    border: 2px solid white;
-    backdrop-filter: blur(2px);
-    box-shadow: inset 0px 0px 30px rgba(255, 255, 255, 0.6);
+    transition: all 1s ease;
+    /* border: 2px solid #c29c3c00; */
+    overflow: hidden;
+    /* backdrop-filter: blur(2px);
+    box-shadow: inset 0px 0px 30px #C29C3C; */
 }
 
 .brJournal .brJournalCardSec .brJournalCardSecItem:hover{
     /* box-shadow:  0px 0px 30px black; */
-    transform: scale(1.02);
+    /* transform: scale(1.02); */
     /* transition: all 0.3s ease; */
+    /* border: 2px solid #C29C3C;s */
+    /* backdrop-filter: blur(2px); */
+    /* box-shadow: inset 0px 0px 30px #C29C3C; */
+    background-color: rgba(255, 255, 255, 0.065);
+    cursor: pointer;
 }
 
 .brJournal .brJournalCardSec .brJournalCardSecItem .cardSecItemImg{
@@ -107,7 +141,30 @@
     /* border-radius: 20px; */
     overflow: hidden;
     border-radius: 20px;
-    border: 2px solid #C29C3C;
+    /* border: 2px solid #C29C3C; */
+    position: relative;
+}
+
+.brJournal .brJournalCardSec:hover .brJournalCardSecItem .cardSecItemImg .readFullArticalBtn.active{
+    transform: translateX(0px);
+}
+.brJournal .brJournalCardSec .brJournalCardSecItem .cardSecItemImg .readFullArticalBtn{
+    color: #C29C3C;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.349);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.147);
+    box-shadow: inset 0px 0px 10px rgba(255, 255, 255, 0.36);
+    transform: translateX(100px);
+    transition: all 0.5s ease-in-out;
 }
 
 .brJournal .brJournalCardSec .brJournalCardSecItem .cardSecItemDetails{
@@ -129,26 +186,7 @@
     color: #e4a606;
 }
 
-.brJournalCardSec .brJournalCardSecItem .fullDetailBtn{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    /* background-color: blueviolet; */
-    width: 90%;
-    padding: 20px 10px;
-    border-top: 2px solid #C29C3C;
 
-}
-
-.brJournalCardSec .brJournalCardSecItem .fullDetailBtn .readFullArticalBtn{
-    color: #C29C3C;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.brJournalCardSec .brJournalCardSecItem .fullDetailBtn .readFullArticalBtn:hover{
-    color: #f5b105;
-    
-}
 
 
 /* ShowFullDetail */

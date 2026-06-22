@@ -91,6 +91,7 @@ import articleImge83 from './articleImg83.jpg'
 import articleImge84 from './articleImg84.avif'
 import articleImge85 from './articleImg85.webp'
 import articleImge86 from './articleImg86.jpeg'
+import { BiSolidBookReader } from 'react-icons/bi'
 
 
 function BRJournal() {
@@ -27496,7 +27497,7 @@ const [fullarticalD , setFullarticalD] = useState({
 //                             cardLink: ""})
 const [articalCategoreyBtn, setArticalCategoreyBtn] = useState("journal")
 
-
+const [isHovered, setIsHovered] = useState(null);
 
 
 
@@ -27516,13 +27517,18 @@ useEffect(()=>{
     <div className='brJournal'>
 
         <div className='backgroundVideoAnimationsec'>
-            <video src={fallingLeves} autoPlay muted loop playsInline></video>
+            {/* <video src={fallingLeves} autoPlay muted loop playsInline></video> */}
 
         </div>
 
-        <h1 className='startingH1tag'>Khogyar Journal</h1>
-        <p className='ptagAfterH1tag'>Stories, memories, and growing wisdom from the heart of Balochistan.</p>
-
+        
+        <div className='journelHeroSec'>
+          <div className='journelHeroSecleftSec'>
+            <h1 className='startingH1tag'>Khogyar Journal</h1>
+            <p className='ptagAfterH1tag'>Stories, memories, and growing wisdom from the heart of Balochistan.</p>
+          </div>
+          <div className='journelHeroSecRightSec'></div>
+        </div>
         {/* <div className='brCategaroBtnSec'>
             <div className={`${articalCategoreyBtn == "journal"? " active": "" }`} onClick={()=> setArticalCategoreyBtn("journal")}>BoriRoots Journal</div>
             <div className={`${articalCategoreyBtn == "landscapes"? " active": "" }`} onClick={()=> setArticalCategoreyBtn("landscapes")}>Balochistan Landscapes</div>
@@ -27535,8 +27541,11 @@ useEffect(()=>{
             {articlesDataArray.map((item,index) => {
                 return (
 
-                <div className='brJournalCardSecItem' key={index}>
-                    <div className='cardSecItemImg' style={{ backgroundImage: `url(${item.img})` }}></div>
+                <div className='brJournalCardSecItem' key={index} onClick={()=> {setShowFullArticalPage(true); setFullarticalD(item)}} onMouseEnter={()=>setIsHovered(index)} onMouseLeave={()=>setIsHovered(null)}>
+                    <div className='cardSecItemImg' style={{ backgroundImage: `url(${item.img})` }}>
+                      
+                        <div className={`readFullArticalBtn ${isHovered == index? "active": ""}`} onClick={()=> {setShowFullArticalPage(true); setFullarticalD(item)}}><BiSolidBookReader /></div>
+                    </div>
 
                     <div className='cardSecItemDetails'>
                         {/* <p>{item.cardDate}</p> */}
@@ -27544,9 +27553,9 @@ useEffect(()=>{
                         {/* <p>{item.cardSource}</p> */}
                         {/* <p>{item.cardPeraghaph}</p> */}
                     </div>
-                    <div className='fullDetailBtn'>
-                        <div className='readFullArticalBtn' onClick={()=> {setShowFullArticalPage(true); setFullarticalD(item)}}>Read Full Article <span> →</span></div>
-                    </div>
+                    
+                        {/* <div className='readFullArticalBtn' onClick={()=> {setShowFullArticalPage(true); setFullarticalD(item)}}></div> */}
+                    
                 </div>
 
                 )
