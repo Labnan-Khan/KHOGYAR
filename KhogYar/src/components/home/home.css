@@ -453,9 +453,15 @@
 
     &:hover{
         /* border: 1px solid #c29c3c7d; */
-        border-left: 3px solid #C29C3C;
-        color: #C29C3C;
+        border-left: 3px solid #c29c3c6d;
+        color: #c29c3c6d;
     }
+}
+
+
+.showcaseOItemSec .showcaseLeftSec .showcaseLeftSecDiv h5.active{
+    border-left: 3px solid #C29C3C;
+        color: #C29C3C;
 }
 
 .homePage .homeProductShowcase .showcaseOItemSec .showcaseRightSec{
@@ -471,8 +477,8 @@
 .homePage .homeProductShowcase .showcaseOItemSec .showcaseRightSec .showcaseRightSecImg{
     width: 100%;
     aspect-ratio: 12/8;
-    background-image: url(../../assets/heroImg1.jpeg);
-    background-position: center;
+    /* background-image: url(../../assets/heroImg1.jpeg); */
+    background-position:top center;
     background-size: cover;
     background-repeat: no-repeat;
 }

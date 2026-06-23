@@ -12,6 +12,10 @@ import vallayimg3 from '../../assets/vallayimg3.jpg'
 import vallayimg4 from '../../assets/vallayimg4.webp'
 import vallayimg5 from '../../assets/vallayimg5.jpeg'
 import Testimonial from '../testimonial/Testimonial'
+import signatureImg1 from '../../assets/signatureProductImg1.jpg'
+import signatureImg2 from '../../assets/signatureProductImg2.jpg'
+import signatureImg3 from '../../assets/signatureProductImg3.jpg'
+import signatureImg4 from '../../assets/signatureProductImg4.jpg'
 
 function Home() {
 
@@ -32,6 +36,26 @@ function Home() {
           {img:vallayimg5, side:"CENTRAL PAKISTAN", name:"Punjab" , detail:"Chaunsa mangoes, Kinnow citrus, and the fertile plains of the Indus heartland."}
         ]
         const [currentVallayItem, setCurrentVallayItem] = useState(0)
+
+        const SignatureProductItems = [
+          {img:signatureImg1, heading:"Chilghoza Pine Nuts",
+           origin:"Chighoza", peragaraph:"Hand-gathered from 2,500m forests. The rarest pine nut on earth, slow-dried in mountain air."
+          },
+          
+          {img:signatureImg2, heading:"Hunza Apricots",
+           origin:"Apricot", peragaraph:"Sun-dried at altitude. Mineral-sweet, irreplaceable character from the world's most fertile valleys."
+          },
+
+          {img:signatureImg3, heading:"Multan Mango Collection",
+           origin:"Chighoza", peragaraph:"Chaunsa & Anwar Ratol varieties dried at peak sweetness from the orchards of Central Punjab."
+          },
+
+          {img:signatureImg4, heading:"Artisan Chocolate Collection",
+           origin:"Chocolate", peragaraph:"Premium couverture infused with saffron, Hunza apricot, and Chilghoza pine nut."
+          },
+
+        ]
+        const [currentSignatureProduct, setCurrentSignatureProduct] = useState(0)
          
   return (
     <>
@@ -155,8 +179,10 @@ function Home() {
               <div style={{backgroundImage: `url(${vallayItems[currentVallayItem].img})` }}></div>
             </div>
           </div>
+
         </div>
       </div>
+
 
       <div className='homeProductShowcase'>
         <h1>Signature Product Showcase</h1>
@@ -169,22 +195,22 @@ function Home() {
             <p>Each product named for its origin, its season, and its singular character.</p>
 
             <div className='showcaseLeftSecDiv'>
-              <h5>The Harvest Box</h5>
-              <h5>The Collector's Edition</h5>
-              <h5>The Atelier Parcel</h5>
-              <h5>The Celebration Box</h5>
+              <h5 className={currentSignatureProduct == 0? "active" : ""} onClick={()=> setCurrentSignatureProduct(0)}>The Harvest Box</h5>
+              <h5 className={currentSignatureProduct == 1? "active" : ""} onClick={()=> setCurrentSignatureProduct(1)}>The Collector's Edition</h5>
+              <h5 className={currentSignatureProduct == 2? "active" : ""} onClick={()=> setCurrentSignatureProduct(2)}>The Atelier Parcel</h5>
+              <h5 className={currentSignatureProduct == 3? "active" : ""} onClick={()=> setCurrentSignatureProduct(3)}>The Celebration Box</h5>
             </div>
 
           </div>
 
           <div className='showcaseRightSec'>
-            <div className='showcaseRightSecImg'></div>
-            <h3>Chilghoza Pine Nuts</h3>
-            <p className='startingP'>Hand-gathered from 2,500m forests. The rarest pine nut on earth, slow-dried in mountain air.</p>
+            <div className='showcaseRightSecImg' style={{backgroundImage: `url(${SignatureProductItems[currentSignatureProduct].img})`}}></div>
+            <h3>{SignatureProductItems[currentSignatureProduct].heading}</h3>
+            <p className='startingP'>{SignatureProductItems[currentSignatureProduct].peragaraph}</p>
             <div className='showcaseRifhtSecBottom'>
               <span>
                 <h6>ORIGIN</h6>
-                <p>Chighoza</p>
+                <p>{SignatureProductItems[currentSignatureProduct].origin}</p>
               </span>
               <span>
                 <h6>HARVEST</h6>
