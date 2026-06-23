@@ -2,11 +2,11 @@ import React, { useEffect, useState } from 'react'
 import './recipe.css'
 import { HiMiniRectangleGroup } from 'react-icons/hi2'
 import { IoIosSunny } from 'react-icons/io'
-import { MdLunchDining } from 'react-icons/md'
+import { MdLunchDining, MdWorkspacePremium } from 'react-icons/md'
 import { GiCampCookingPot, GiCook, GiHotMeal, GiMeal, GiSandsOfTime } from 'react-icons/gi'
 import { LuSalad } from 'react-icons/lu'
 import { TbSaladFilled, TbSoupFilled } from 'react-icons/tb'
-import { FaFire, FaStar } from 'react-icons/fa'
+import { FaCanadianMapleLeaf, FaFire, FaStar } from 'react-icons/fa'
 import { TiArrowLeftThick } from 'react-icons/ti'
 import img1 from '../../assets/chocolet.png'
 // import img2 from '../../assets/Beef_NihariImg.png'
@@ -18,35 +18,42 @@ import recipePageBgImg3 from './recipeheroBgImg3.png'
 
 import { RiGroupLine } from 'react-icons/ri'
 import { LiaWalletSolid } from 'react-icons/lia'
+import { GoSun } from 'react-icons/go'
+import { BsStars } from 'react-icons/bs'
 function Recipe() {
 
     const recipeItems = {
     'Dried Fruits':[
                                 {cardImg: img1, cardHeading: "Dried Strawberry",
-                                rating:[4.8, 80], calories:'350', cookingLevel:"Medium", perfectWith:["Naan", "Roti", "Salad"],
-                                cookingTime: "40", ingredients: ["1 kg chicken", "5 tomatoes", "4-5 green chilies", "1 tbsp ginger-garlic paste", "Red chili, turmeric, salt", "1/2 cup BORI ROOTS Balochi Spice Infused Oil"],
-                                numberOfPeople:"4", steps:[" Heat spice-infused oil, brown chicken.","Add tomatoes and spices.","Cook until masala thickens.","Add chilies and ginger.","Drizzle more infused oil before serving."],
+                                rating:[4.8, 80], sizes:["2500g", "500g", "1kg"],
+                                price:"24$", storage:"Store in a cool and dry place",
+                                cookingTime: "40",uses:["Snacking", "Baking", "Smoothies"],
+                                features:["100% Natural","Preservative-Free","Clean Ingredients","Premium Quality"],
                                 cardParagraph: "Aromatic and spicy Pakistani chicken karahi made with BORI ROOTS Balochi Spice Infused Olive Oil. Rich, flavorful, and authentically spiced."},
 
-                                {cardImg: img1, cardHeading: "Dried Mango",
+                                {
+                                  cardImg: img1, cardHeading: "Dried Mango",
                                 rating:[4.9, 120], calories:'480', cookingLevel:"Hard", perfectWith:["Naan", "Khamiri Roti", "Lemon"],
                                 cookingTime: "180", ingredients: ["1 kg beef shank", "3 tbsp nihari masala", "2 tbsp wheat flour", "1 tbsp ginger-garlic paste", "1/2 cup ghee", "Salt to taste", "Fresh ginger, green chilies for garnish"],
                                 numberOfPeople:"", steps:["Heat ghee and fry ginger-garlic paste.","Add beef and nihari masala, brown well.","Add water and slow cook for 2.5 hours.","Mix flour with water and add to thicken.","Garnish with ginger, chilies and fresh coriander."],
                                 cardParagraph: "A slow-cooked, deeply aromatic Pakistani beef stew that has warmed mornings for centuries. Meltingly tender with a rich, spiced broth."},
 
-                                {cardImg: img1, cardHeading: "Dried Banana",
+                                {
+                                  cardImg: img1, cardHeading: "Dried Banana",
                                 rating:[4.9, 210], calories:'520', cookingLevel:"Hard", perfectWith:["Raita","Salad","Chutney"],
                                 cookingTime: "90", ingredients: ["1 kg mutton", " 3 cups basmati rice", " 2 onions (fried golden)", "1 cup yogurt", "Whole spices (cloves, cardamom, bay leaves)", "Saffron soaked in milk", "1/2 cup ghee", "Biryani masala"],
                                 numberOfPeople:"", steps:["Marinate mutton in yogurt, spices and fried onion for 2 hours.","Parboil rice with whole spices to 70%.","Layer rice and mutton alternately in heavy pot.","Pour saffron milk and ghee on top.","Seal with dough or foil, cook on dum for 40 min."],
                                 cardParagraph: "The crown jewel of subcontinental cuisine. Fragrant basmati rice layered with tender mutton, saffron and caramelized onions."},
 
-                                {cardImg: img1, cardHeading: "Dried Cherry",
+                                {
+                                  cardImg: img1, cardHeading: "Dried Cherry",
                                 rating:[4.7, 95], calories:'290', cookingLevel:"Medium", perfectWith:["Naan","Rice","Papadom"],
                                 cookingTime: "60", ingredients: ["1 cup black lentils (urad dal)", "1/4 cup kidney beans", "2 tomatoes pureed", "1 tbsp butter", "1 cup cream", "Cumin, garam masala, red chili", "Ginger-garlic paste"],
                                 numberOfPeople:"4", steps:["Soak lentils and beans overnight, pressure cook.","Saute ginger-garlic in butter, add tomato puree.","Add spices and cook masala until oil separates.","Add lentils and simmer for 30 min.","Finish with cream and butter."],
                                 cardParagraph: "Velvety slow-cooked black lentils enriched with butter and cream. A restaurant classic that belongs on every home table."},
 
-                                {cardImg: img1, cardHeading: "Dried Melon",
+                                {
+                                  cardImg: img1, cardHeading: "Dried Melon",
                                 rating:[4.8, 175], calories:'380', cookingLevel:"Medium", perfectWith:["Naan","Basmati Rice","Raita"],
                                 cookingTime: "50", ingredients: ["800g chicken breast", "1 cup yogurt", "Tikka masala spice blend", "400g crushed tomatoes", "1 cup heavy cream", " 2 onions", "Ginger-garlic paste", "Fresh coriander"],
                                 numberOfPeople:"4", steps:["Marinate chicken in yogurt and tikka spices for 2 hours.","Grill or broil chicken until charred.","Saute onions, add ginger-garlic and tomatoes.","Add spices and simmer 15 min.","Add chicken and cream, cook 10 more min."],
@@ -241,8 +248,7 @@ function Recipe() {
     ],
 
     'Customized Chocolate':[
-        {
-    id: 51,
+    {
     cardImg: "malaysian-rendang.jpg",
     cardHeading: "Customized Chocolate",
     rating: [4.9, 145],
@@ -347,10 +353,12 @@ function Recipe() {
     const [slectedREcipeArreyItems, setSlectedREcipeArreyItems ] = useState(allRecipeItemsArray)
 
     const [showFullRecipePage, setShowFullRecipePage] = useState(false)
-    const [fullRecipeD , setFullRecipeD] = useState({cardImg: img1, cardHeading: "",
-                                rating:[4.8, 80], calories:'', cookingLevel:"", perfectWith:["","",""],
-                                cookingTime: "", ingredients: ["", "", "", "", "", ""],
-                                numberOfPeople:"", steps:["","","","",""],
+    const [fullRecipeD , setFullRecipeD] = useState({
+                                cardImg: img1, cardHeading: "",
+                                rating:["",""], sizes:["", "", ""],
+                                price:"", storage:"Store in a cool and dry place",
+                                cookingTime: "",uses:["Snacking", "Baking", "Smoothies"],
+                                features:["","",""],
                                 cardParagraph: ""})
     
     const [slectedRecipeCategory,setSlectedRecipeCategory] = useState('All Products')
@@ -370,81 +378,65 @@ function Recipe() {
 
         <div className= {`ShowFulldetail ${showFullRecipePage? "showFullRecipePage" : ""}`}  onClick={()=> setShowFullRecipePage(false)}>
                     {/* <div className='gobackButton' ><TiArrowLeftThick /></div> */}
-                    <div className='recipeSec' onClick={(e)=>  e.stopPropagation()}>
+                    <div className='recipeSec' >
                         {/* <h1 className='articalHeading startingH1tag'>{fullarticalD.cardHeading}</h1> */}
-                        <div  className='recipeDetails'>
-                            <div className='recipeHeader'>
-                                <div className='headerImg' style={{ backgroundImage: `url(${img1})` }}></div>
+                        
+                        <div  className='recipeDetails' onClick={(e)=>  e.stopPropagation()}>
+
+                            <div className='detailSectionLeftSide'>
+                              <div className='leftSideMainImg'></div>
+                              {/* <div className='leftSideImgOptions'>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                              </div> */}
+                            </div>
+
+                            <div className='detailSectionRightSide'>
+                              <h2>{fullRecipeD.cardHeading}</h2>
+                              <div className='rightSideRating'><span><FaStar /></span>{fullRecipeD.rating[0]} - {fullRecipeD.rating[1]} Reviews</div>
+                              <p className='rightSidePrice'>Price:<span>{fullRecipeD.price}</span></p>
+                                <div className='rightSideSizeofItem'>
+                                  <p>Size:</p>
+                                  {fullRecipeD.sizes.map((item, index)=>{
+                                    return(
+                                      <span key={index}>{item}</span>
+                                    )
+                                  })}
+                                </div>
+                              <p className='rightSideMainP'>{fullRecipeD.cardParagraph}</p>
+                              <div className='MobileViewImg'></div>
+                              <div className='rightSideFeatures'>
                                 
-                                <div className='headerBottom'>
-                                    <h4>{fullRecipeD.cardHeading}</h4>
-                                    {/* <div className='headerImg' style={{ backgroundImage: `url(${img2})` }}></div> */}
-                                    <p>{fullRecipeD.cardParagraph}</p>
-                                    <div className='headerImgMobile' style={{ backgroundImage: `url(${img1})` }}></div>
-                                    <div className='headerBottomIcon'>
-                                        <div>
-                                            <span><GiSandsOfTime /></span> 
-                                            <p>{fullRecipeD.cookingTime} min</p>
-                                        </div>
-
-                                        <div>
-                                            <span><RiGroupLine /></span> 
-                                            <p>Serves {fullRecipeD.numberOfPeople} </p>
-                                        </div>
-
-                                        <div>
-                                            <span><GiCook /></span>
-                                            <p>{fullRecipeD.cookingLevel} </p>
-                                        </div>
+                                    <div>
+                                      <span><GoSun /></span>
+                                      <p>{fullRecipeD.features[0]}</p>
                                     </div>
 
-                                </div>
-                                
-                            </div>
-                            <div className='brP'>
-                                    <p>Made with BORI ROOTS Balochi Spice Infused Olive Oil</p>
+                                    <div>
+                                      <span><BsStars /></span>
+                                      <p>{fullRecipeD.features[1]}</p>
+                                    </div>
+
+                                    <div>
+                                      <span><FaCanadianMapleLeaf /></span>
+                                      <p>{fullRecipeD.features[2]}</p>
+                                    </div>
+
+                                    <div>
+                                      <span><MdWorkspacePremium  /></span>
+                                      <p>{fullRecipeD.features[3]}</p>
+                                    </div>
+                                  
+                              </div>
                             </div>
 
-                            <div className='recipemain'>
-                                
-                                <div className='RecipeIngredients'>
-                                    <h5>Ingredients</h5>
-                                    <ul>
-                                        {fullRecipeD.ingredients.map((ingredient,index) =>{
-                                            return (
-                                                <li key={index}> {ingredient} </li>
-                                            )
-                                        })}
-                                    </ul>
-                                </div>
-                                <div className='recipeSteps'>
-                                    <h5>Steps</h5>
-                                    <ol>
-                                        {fullRecipeD.steps.map((step,index) =>{
-                                            return (
-                                                <li key={index}>{step}</li>
-                                            )
-                                        })}
-                                        
-                                    </ol>
-                                </div>
-                            </div>
-
-                            <div className='recipeFooter'>
-                                <h4>Prefect With</h4>
-                                <div className='recipeFooterDiv'>
-                                    {fullRecipeD.perfectWith.map((item,index)=>{
-                                           return(
-                                                 <div>{item} </div>
-                                           )
-                                    })}
-                                    
-                                </div>
-                            </div>
                         </div>
+
+                        
                         
                     </div>
-            </div>
+          </div>
 
       <div className='recipeHeroSec'>
 
