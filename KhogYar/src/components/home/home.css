@@ -529,5 +529,36 @@
         "item3" "item4"
         "item5";
     
-}
+    }
+
+
+    .homePage .homeValleys .valleySection .vallaySectionRight{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .homePage .homeValleys .valleySection .vallaySectionRight .vallayDetailSection{
+    width: 90%;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: start;
+    }
+
+    .homePage .homeValleys .valleySection .vallaySectionRight .vallaySetionRightImg{
+        width: 90%;
+    }
+
+    .homePage .homeProductShowcase .showcaseOItemSec{
+        flex-direction: column;
+    }
+    .homePage .homeProductShowcase .showcaseOItemSec .showcaseRightSec{
+        width: 90%;
+    }
+
+    .homePage .homeProductShowcase .showcaseOItemSec .showcaseLeftSec{
+        width: 90%;
+    }
+
 }
