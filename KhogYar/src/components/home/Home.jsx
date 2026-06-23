@@ -71,7 +71,7 @@ function Home() {
                 <h3>Harvest Collection</h3>
                 <p>DRY FRUITS · FRUIT ROLLS · FRESH</p>
               </div>
-              <div className='fiveLastIcon'><FaArrowRightLong /></div>
+              {/* <div className='fiveLastIcon'><FaArrowRightLong /></div> */}
             </div>
 
           </div>
@@ -84,7 +84,7 @@ function Home() {
                 <h3>Artisan Chocolates</h3>
                 <p>SIGNATURE · CORPORATE · WEDDING</p>
               </div>
-              <div className='fiveLastIcon'><FaArrowRightLong /></div>
+              {/* <div className='fiveLastIcon'><FaArrowRightLong /></div> */}
             </div>
 
           </div>
@@ -97,7 +97,7 @@ function Home() {
                 <h3>The Gift House</h3>
                 <p>LUXURY BOXES · BESPOKE GIFTING</p>
               </div>
-              <div className='fiveLastIcon'><FaArrowRightLong /></div>
+              {/* <div className='fiveLastIcon'><FaArrowRightLong /></div> */}
             </div>
 
           </div>
@@ -110,7 +110,7 @@ function Home() {
                 <h3>Gourmet Pantry</h3>
                 <p>FRUIT POWDERS · INGREDIENTS</p>
               </div>
-              <div className='fiveLastIcon'><FaArrowRightLong /></div>
+              {/* <div className='fiveLastIcon'><FaArrowRightLong /></div> */}
             </div>
 
           </div>
@@ -123,7 +123,7 @@ function Home() {
                 <h3>Heritage Collection</h3>
                 <p>DESI GHEE · OILS · DAIRY</p>
               </div>
-              <div className='fiveLastIcon'><FaArrowRightLong /></div>
+              {/* <div className='fiveLastIcon'><FaArrowRightLong /></div> */}
             </div>
 
           </div>

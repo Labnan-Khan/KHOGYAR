@@ -184,7 +184,7 @@
 .fiveItemContentSec{
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     gap: 10px;
     background-color: rgba(0, 0, 0, 0.457);
@@ -202,7 +202,7 @@
     align-items: center;
     background-color: white;
     color: #C29C3C;
-    transform: translateX(-200%);
+    transform: translateY(200%);
     transition: all 1s ease;
     /* opacity: 0s; */
 }
