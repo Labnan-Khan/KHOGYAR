@@ -17,37 +17,63 @@
 .homePage .headingP{
     font-size: 20px;
     color: rgb(160, 158, 158);
-    text-align: center;
+    /* text-align: center; */
     width: 80%;
 }
 
 .homePage .hoemPageHeroSec{
     width: 100%;
-    /* background-color: antiquewhite; */
+    background-color: rgba(0, 0, 0, 0.086);
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px;
+    padding-top: 70px;
     /* aspect-ratio: 12/5; */
 
-    background-image: url(../../assets/heroImg3.jpg);
-    background-position: top center;
-    background-repeat: no-repeat;
-    background-size: cover;
     
+    position: relative;
+    
+}
+.heroVideoSec{
+    position: absolute;
+    /* width: 30%; */
+    inset: 0;
+    z-index: -1;
+    overflow: hidden;
+    /* background-color: black; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    background-image: url(../../assets/herosectionImg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.heroVideoSec video{
+    width: 60%;
+    /* height: 100%; */
+    transform: translateY(30%);
+
 }
 
 
 
 
 .homePage .hoemPageHeroSec .heroSectionRightSide{
-    width: 50%;
+    width: 30%;
     aspect-ratio: 12/12;
-
-    /* background-image: url(../../assets/chocolete.png); */
+    /* border: 3px solid #C29C3C; */
+    background-image: url(../../assets/heroImgForRightSide.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    /* box-shadow: 0px 0px 10px #C29C3C; */
+    /* filter: drop-shadow(0px 0px 5px #C29C3C); */
 }
 
 .homePage .hoemPageHeroSec .heroSectionLeftSide{
@@ -94,7 +120,7 @@
 
 .hoemPageHeroSec .heroSectionLeftSide  h1 span{
     background: none;
-    -webkit-text-fill-color: #371003;
+    -webkit-text-fill-color: #efd3a5;
     color: rgb(77, 29, 1);
 }
 
@@ -109,17 +135,15 @@
 .hoemPageHeroSec .heroSectionLeftSide .heroBtnSec button{
     font-size: 15px;
     padding: 10px;
-    border: 1px solid white;
-    color: white;
-    background-color: rgba(255, 255, 255, 0.06);
+    border: 1px solid #C29C3C;
+    color: rgb(252, 251, 251);
+    background-color: black;
     cursor: pointer;
     border-radius: 10px;
-    backdrop-filter: blur(3px);
-    box-shadow:inset 0px 0px 10px rgba(255, 255, 255, 0.462);
 
     &:hover{
         border: 1px solid #C29C3C;
-        box-shadow:inset 0px 0px 10px #C29C3C;
+        color: #C29C3C;
     }
 }
 
@@ -374,7 +398,6 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    box-shadow: inset 0px 0px 50px #C29C3C;
 }
 
 

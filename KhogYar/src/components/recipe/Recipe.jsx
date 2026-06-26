@@ -6,7 +6,7 @@ import { MdLunchDining, MdWorkspacePremium } from 'react-icons/md'
 import { GiCampCookingPot, GiCook, GiHotMeal, GiMeal, GiSandsOfTime } from 'react-icons/gi'
 import { LuSalad } from 'react-icons/lu'
 import { TbSaladFilled, TbSoupFilled } from 'react-icons/tb'
-import { FaCanadianMapleLeaf, FaFire, FaStar } from 'react-icons/fa'
+import { FaCanadianMapleLeaf, FaFire, FaStar, FaWhatsapp } from 'react-icons/fa'
 import { TiArrowLeftThick } from 'react-icons/ti'
 import img1 from '../../assets/chocolet.png'
 // import img2 from '../../assets/Beef_NihariImg.png'
@@ -14,7 +14,7 @@ import recipePageBgImg1 from './recipeheroBgImg1.png'
 import recipePageBgImg2 from './recipeheroBgImg2.png'
 import recipePageBgImg3 from './recipeheroBgImg3.png'
 
-
+ 
 
 import { RiGroupLine } from 'react-icons/ri'
 import { LiaWalletSolid } from 'react-icons/lia'
@@ -376,6 +376,10 @@ function Recipe() {
   return (
     <div className='recipe'>
 
+      <div className='whatsappBtn'>
+          <FaWhatsapp />
+      </div>
+
         <div className= {`ShowFulldetail ${showFullRecipePage? "showFullRecipePage" : ""}`}  onClick={()=> setShowFullRecipePage(false)}>
                     {/* <div className='gobackButton' ><TiArrowLeftThick /></div> */}
                     <div className='recipeSec' >
@@ -453,9 +457,9 @@ function Recipe() {
             <h1 className='startingH1tag'>Eat Well, Live Well</h1>
             
             <p className='ptagAfterH1tag'>
-                Discover nutrient-packed recipes that are good for your body, mind and soul.
+                Discover nutrient-packed products that are good for your body, mind and soul.
             </p>
-            <button>Explore Our Products →</button>
+            <button>Contact US →</button>
             <div className='herheadindClintShowcaseSec'>
                 <div className='imgSecofClinte'>
                   <span></span>
@@ -522,27 +526,29 @@ function Recipe() {
                 return(
 
                   <div className='recipeItem'>
+                    <div className='recipeItemCornerDot'></div>
+                    <div className='recipeItemCornerDot'></div>
+                    <div className='recipeItemCornerDot'></div>
+                    <div className='recipeItemCornerDot'></div>
 
                     <div className='itemImg'></div>
 
                     <div className='itemDetalSec'>
+
                       <h4>{item.cardHeading}</h4>
+
                       <div className='itemReview'>
-                        <div className='iconDiv'><FaStar /> <span>{item.rating[0]} {`(${item.rating[1]})`}</span></div>
-                        <p> <span><FaFire/></span> {item.calories} cal</p>
+                        <div className='iconDiv'>
+                          <FaStar /> <span>{item.rating[0]} {`(${item.rating[1]})`}</span>
+                        </div>
                       </div>
 
                       <div className='btnSec'>
-                        
-                        <div>
-                          <LiaWalletSolid />
-                            <p>{item.cookingTime}$</p>
-                        </div>
                         <button onClick={()=>{setShowFullRecipePage(true); setFullRecipeD(item)}}>Item Details</button>
                       </div>
-                </div>
+                    </div>
                 
-            </div>
+                  </div>
                 )
             })}
             

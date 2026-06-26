@@ -16,6 +16,7 @@ import signatureImg1 from '../../assets/signatureProductImg1.jpg'
 import signatureImg2 from '../../assets/signatureProductImg2.jpg'
 import signatureImg3 from '../../assets/signatureProductImg3.jpg'
 import signatureImg4 from '../../assets/signatureProductImg4.jpg'
+import heroVideo from '../../assets/heroSectionVideo.mp4'
 
 function Home() {
 
@@ -69,7 +70,7 @@ function Home() {
           <p className='headingP'>Balochistan Harvest 2025</p>
           <h1>From the Valleys of Pakistan to the <span> World's Finest tables.</span></h1>
             
-          <p>Bringing extraordinary, rare harvests from Pakistan's mountains and valleys to discerning connoisseurs worldwide.</p>
+          {/* <p>Bringing extraordinary, rare harvests from Pakistan's mountains and valleys to discerning connoisseurs worldwide.</p> */}
 
           <div className='heroBtnSec'>
             <button>EXPLORE THE HARVEST</button>
@@ -77,7 +78,12 @@ function Home() {
           </div>
         </div>
 
-        {/* <div className='heroSectionRightSide'></div> */}
+        <div className='heroSectionRightSide'>
+          
+        </div>
+        <div className='heroVideoSec'>
+          {/* <video src={heroVideo} autoPlay muted loop></video> */}
+        </div>
 
       </div>
 
