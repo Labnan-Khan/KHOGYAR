@@ -376,9 +376,7 @@ function Recipe() {
   return (
     <div className='recipe'>
 
-      <div className='whatsappBtn'>
-          <FaWhatsapp />
-      </div>
+      
 
         <div className= {`ShowFulldetail ${showFullRecipePage? "showFullRecipePage" : ""}`}  onClick={()=> setShowFullRecipePage(false)}>
                     {/* <div className='gobackButton' ><TiArrowLeftThick /></div> */}

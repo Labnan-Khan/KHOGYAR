@@ -7,6 +7,7 @@ import Recipe from './components/recipe/Recipe'
 import Contact from './components/contact/Contact'
 import Home from './components/home/Home'
 import BRJournal from './components/brJournal/BRJournal'
+import WhatsappBtn from './components/whatsappbtn/WhatsappBtn'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="*" element={<Home />} />
       </Routes>
+      <WhatsappBtn />
       <Footera />
     </BrowserRouter>
   )
