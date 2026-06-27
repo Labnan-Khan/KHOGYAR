@@ -25,17 +25,17 @@ function Recipe() {
     const recipeItems = {
     'Dried Fruits':[
                                 {cardImg: img1, cardHeading: "Dried Strawberry",
-                                rating:[4.8, 80], sizes:[["1200","2500g"], ["2300","500g"], ["4100","1kg"]],
+                                rating:[4.8, 80], sizes:[["1200","250g"], ["2300","500g"], ["4100","1kg"]],
                                 price:"24$",
                                 cardParagraph: "Naturally sweet, vibrant, and rich in antioxidants, our dried strawberries are carefully dehydrated to preserve their fresh flavor with no added preservatives or artificial ingredients."},
 
                                 {
                                   cardImg: img1, cardHeading: "Dried Mango",
-                                rating:[4.9, 120], sizes:[["1100","2500g"], ["2200","500g"], ["4300","1kg"]],
+                                rating:[4.9, 120], sizes:[["1100","250g"], ["2200","500g"], ["4300","1kg"]],
                                 cardParagraph: "Enjoy the tropical sweetness of premium dried mango slices, packed with vitamins, fiber, and natural goodness for a delicious and healthy everyday snack."},
                                 {
                                   cardImg: img1, cardHeading: "Dried Banana",
-                                rating:[4.9, 210], sizes:[["1300","2500g"], ["2300","500g"], ["4000","1kg"]],
+                                rating:[4.9, 210], sizes:[["1300","250g"], ["2300","500g"], ["4000","1kg"]],
                                 cardParagraph: "Enjoy the tropical sweetness of premium dried mango slices, packed with vitamins, fiber, and natural goodness for a delicious and healthy everyday snack."},
 
                                 {
@@ -50,7 +50,7 @@ function Recipe() {
 
                                 {
                                   cardImg: img1, cardHeading: "Dried Melon",
-                                rating:[4.8, 175], sizes:[["1050","2500g"], ["2250","500g"], ["4350","1kg"]],
+                                rating:[4.8, 175], sizes:[["1050","250g"], ["2250","500g"], ["4350","1kg"]],
                                 cardParagraph: "Soft, naturally sweet dried melon slices made from premium fruits, carefully dried to preserve their refreshing taste and nutritional value."},
 
                                                 ],
@@ -60,7 +60,7 @@ function Recipe() {
     cardImg: "greek-moussaka.jpg",
     cardHeading: "Mango Powder",
     rating: [4.7, 89],
-    sizes:[["0","2500g"], ["0","500g"], ["0","1kg"]],
+    sizes:[["0","250g"], ["0","500g"], ["0","1kg"]],
     cardParagraph: "Made from premium ripe mangoes, this finely ground powder delivers authentic fruity flavor, perfect for smoothies, desserts, baking, and healthy recipes."
  
     
@@ -70,7 +70,7 @@ function Recipe() {
     cardImg: "shakshuka.jpg",
     cardHeading: "Lemon Powder",
     rating: [4.7, 89],
-    sizes:[["0","2500g"], ["0","500g"], ["0","1kg"]],
+    sizes:[["0","250g"], ["0","500g"], ["0","1kg"]],
     cardParagraph: "Pure lemon powder with a refreshing citrus taste, ideal for beverages, cooking, baking, and seasoning without artificial additives or preservatives."
  
     
@@ -80,7 +80,7 @@ function Recipe() {
     cardImg: "hummus.jpg",
     cardHeading: "Melon Powder",
     rating: [4.7, 200],
-    sizes:[["0","2500g"], ["0","500g"], ["0","1kg"]],
+    sizes:[["0","250g"], ["0","500g"], ["0","1kg"]],
     cardParagraph: "A naturally sweet fruit powder made from fresh melons, perfect for smoothies, desserts, yogurt, and nutritious everyday recipes."
     
    
@@ -90,7 +90,7 @@ function Recipe() {
     cardImg: "lamb-kofta.jpg",
     cardHeading: "Watermelon Powder",
     rating: [4.8, 91],
-    sizes:[["0","2500g"], ["0","500g"], ["0","1kg"]],
+    sizes:[["0","250g"], ["0","500g"], ["0","1kg"]],
     cardParagraph: "Crafted from fresh watermelon, this vibrant fruit powder adds refreshing natural flavor and nutrition to drinks, desserts, and healthy meals."
   
     
@@ -100,7 +100,7 @@ function Recipe() {
     cardImg: "pasta-alla-norma.jpg",
     cardHeading: "Banana Powder",
     rating: [4.6, 77],
-    sizes:[["0","2500g"], ["0","500g"], ["0","1kg"]],
+    sizes:[["0","250g"], ["0","500g"], ["0","1kg"]],
     cardParagraph: "Smooth, naturally sweet banana powder packed with essential nutrients, ideal for shakes, baby food, baking, and wholesome recipes."
  
     
@@ -115,7 +115,7 @@ function Recipe() {
     cardImg: "korean-bibimbap.jpg",
     cardHeading: "Loaded Banana Chips",
     rating: [4.8, 155],
-    sizes:[["0","2500g"], ["0","500g"], ["0","1kg"]],
+    sizes:[["0","250g"], ["0","500g"], ["0","1kg"]],
     cardParagraph: "Crispy banana chips coated with delicious flavors for the perfect balance of crunch and taste, making every bite irresistibly satisfying."
     
    
@@ -129,7 +129,7 @@ function Recipe() {
     cardImg: "malaysian-rendang.jpg",
     cardHeading: "Customized Chocolate",
     rating: [4.9, 145],
-    sizes:[["0","2500g"], ["0","500g"], ["0","1kg"]],
+    sizes:[["0","250g"], ["0","500g"], ["0","1kg"]],
     cardParagraph: "Create your perfect chocolate with premium ingredients, personalized flavors, and custom toppings for a truly unique and memorable sweet experience."
 
    
@@ -144,7 +144,7 @@ function Recipe() {
     cardImg: "jamaican-jerk-chicken.jpg",
     cardHeading: "Olive Oil (500ml)",
     rating: [4.9, 195],
-    sizes:[["0","2500g"], ["0","500g"], ["0","1kg"]],
+    sizes:[["0","250g"], ["0","500g"], ["0","1kg"]],
     cardParagraph: "Cold-pressed extra virgin olive oil with a rich aroma and smooth flavor, perfect for cooking, salads, and supporting a healthy lifestyle."
    
    
@@ -154,7 +154,7 @@ function Recipe() {
     cardImg: "caribbean-goat-curry.jpg",
     cardHeading: "Olive Oil (750ml)",
     rating: [4.8, 88],
-    sizes:[["0","2500g"], ["0","500g"], ["0","1kg"]],
+    sizes:[["0","250g"], ["0","500g"], ["0","1kg"]],
     cardParagraph: "Premium extra virgin olive oil carefully extracted to preserve its natural nutrients, delivering exceptional taste and quality in every drop."
  
   },
@@ -173,7 +173,7 @@ function Recipe() {
     const [showFullRecipePage, setShowFullRecipePage] = useState(false)
     const [fullRecipeD , setFullRecipeD] = useState({
                                 cardImg: img1, cardHeading: "",
-                                rating:["",""], sizes:[["0","2500g"], ["0","500g"], ["0","1kg"]],
+                                rating:["",""], sizes:[["0","250g"], ["0","500g"], ["0","1kg"]],
                                  uses:["Snacking", "Baking", "Smoothies"],
                                 cardParagraph: ""})
     

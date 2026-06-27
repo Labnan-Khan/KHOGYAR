@@ -624,7 +624,7 @@
     padding: 10px;
     font-size: 10px;
     font-weight: 900;
-    width: 100px;
+    /* width: 100px; */
     color: black;
     background-color: white;
 }
