@@ -73,8 +73,8 @@ function Home() {
           {/* <p>Bringing extraordinary, rare harvests from Pakistan's mountains and valleys to discerning connoisseurs worldwide.</p> */}
 
           <div className='heroBtnSec'>
-            <button>EXPLORE THE HARVEST</button>
-            <button>BESPOKE GIFTING</button>
+            <button>PRODUCTS</button>
+            <button>CONTACT US</button>
           </div>
         </div>
 

@@ -25,39 +25,33 @@ function Recipe() {
     const recipeItems = {
     'Dried Fruits':[
                                 {cardImg: img1, cardHeading: "Dried Strawberry",
-                                rating:[4.8, 80], sizes:["2500g", "500g", "1kg"],
-                                price:"24$", storage:"Store in a cool and dry place",
-                                cookingTime: "40",uses:["Snacking", "Baking", "Smoothies"],
-                                features:["100% Natural","Preservative-Free","Clean Ingredients","Premium Quality"],
-                                cardParagraph: "Aromatic and spicy Pakistani chicken karahi made with BORI ROOTS Balochi Spice Infused Olive Oil. Rich, flavorful, and authentically spiced."},
+                                rating:[4.8, 80], sizes:[["1200","2500g"], ["2300","500g"], ["4100","1kg"]],
+                                price:"24$",
+                                cardParagraph: "Naturally sweet, vibrant, and rich in antioxidants, our dried strawberries are carefully dehydrated to preserve their fresh flavor with no added preservatives or artificial ingredients."},
 
                                 {
                                   cardImg: img1, cardHeading: "Dried Mango",
-                                rating:[4.9, 120], calories:'480', cookingLevel:"Hard", perfectWith:["Naan", "Khamiri Roti", "Lemon"],
-                                cookingTime: "180", ingredients: ["1 kg beef shank", "3 tbsp nihari masala", "2 tbsp wheat flour", "1 tbsp ginger-garlic paste", "1/2 cup ghee", "Salt to taste", "Fresh ginger, green chilies for garnish"],
-                                numberOfPeople:"", steps:["Heat ghee and fry ginger-garlic paste.","Add beef and nihari masala, brown well.","Add water and slow cook for 2.5 hours.","Mix flour with water and add to thicken.","Garnish with ginger, chilies and fresh coriander."],
-                                cardParagraph: "A slow-cooked, deeply aromatic Pakistani beef stew that has warmed mornings for centuries. Meltingly tender with a rich, spiced broth."},
-
+                                rating:[4.9, 120], sizes:[["1100","2500g"], ["2200","500g"], ["4300","1kg"]],
+                                cardParagraph: "Enjoy the tropical sweetness of premium dried mango slices, packed with vitamins, fiber, and natural goodness for a delicious and healthy everyday snack."},
                                 {
                                   cardImg: img1, cardHeading: "Dried Banana",
-                                rating:[4.9, 210], calories:'520', cookingLevel:"Hard", perfectWith:["Raita","Salad","Chutney"],
-                                cookingTime: "90", ingredients: ["1 kg mutton", " 3 cups basmati rice", " 2 onions (fried golden)", "1 cup yogurt", "Whole spices (cloves, cardamom, bay leaves)", "Saffron soaked in milk", "1/2 cup ghee", "Biryani masala"],
-                                numberOfPeople:"", steps:["Marinate mutton in yogurt, spices and fried onion for 2 hours.","Parboil rice with whole spices to 70%.","Layer rice and mutton alternately in heavy pot.","Pour saffron milk and ghee on top.","Seal with dough or foil, cook on dum for 40 min."],
-                                cardParagraph: "The crown jewel of subcontinental cuisine. Fragrant basmati rice layered with tender mutton, saffron and caramelized onions."},
+                                rating:[4.9, 210], sizes:[["1300","2500g"], ["2300","500g"], ["4000","1kg"]],
+                                cardParagraph: "Enjoy the tropical sweetness of premium dried mango slices, packed with vitamins, fiber, and natural goodness for a delicious and healthy everyday snack."},
 
                                 {
                                   cardImg: img1, cardHeading: "Dried Cherry",
-                                rating:[4.7, 95], calories:'290', cookingLevel:"Medium", perfectWith:["Naan","Rice","Papadom"],
-                                cookingTime: "60", ingredients: ["1 cup black lentils (urad dal)", "1/4 cup kidney beans", "2 tomatoes pureed", "1 tbsp butter", "1 cup cream", "Cumin, garam masala, red chili", "Ginger-garlic paste"],
-                                numberOfPeople:"4", steps:["Soak lentils and beans overnight, pressure cook.","Saute ginger-garlic in butter, add tomato puree.","Add spices and cook masala until oil separates.","Add lentils and simmer for 30 min.","Finish with cream and butter."],
-                                cardParagraph: "Velvety slow-cooked black lentils enriched with butter and cream. A restaurant classic that belongs on every home table."},
+                                rating:[4.7, 95], sizes:[["1000","250g"], ["2100","500g"], ["3800","1kg"]],
+                                cardParagraph: "Bursting with rich, tangy sweetness, our dried cherries are carefully prepared to retain their nutrients and make a perfect healthy snack anytime."},
+
+                                {
+                                  cardImg: img1, cardHeading: "Dried Kiwi",
+                                rating:[4.8, 175], sizes:[["1100","250g"], ["2250","500g"], ["4000","1kg"]],
+                                cardParagraph: "A refreshing balance of sweet and tangy flavors, our dried kiwi offers a naturally delicious source of fiber, vitamin C, and essential nutrients."},
 
                                 {
                                   cardImg: img1, cardHeading: "Dried Melon",
-                                rating:[4.8, 175], calories:'380', cookingLevel:"Medium", perfectWith:["Naan","Basmati Rice","Raita"],
-                                cookingTime: "50", ingredients: ["800g chicken breast", "1 cup yogurt", "Tikka masala spice blend", "400g crushed tomatoes", "1 cup heavy cream", " 2 onions", "Ginger-garlic paste", "Fresh coriander"],
-                                numberOfPeople:"4", steps:["Marinate chicken in yogurt and tikka spices for 2 hours.","Grill or broil chicken until charred.","Saute onions, add ginger-garlic and tomatoes.","Add spices and simmer 15 min.","Add chicken and cream, cook 10 more min."],
-                                cardParagraph: "Smoky grilled chicken pieces swimming in a luscious, spiced tomato-cream sauce. A global icon of South Asian flavors."},
+                                rating:[4.8, 175], sizes:[["1050","2500g"], ["2250","500g"], ["4350","1kg"]],
+                                cardParagraph: "Soft, naturally sweet dried melon slices made from premium fruits, carefully dried to preserve their refreshing taste and nutritional value."},
 
                                                 ],
     'Fruit Powders':[
@@ -65,149 +59,51 @@ function Recipe() {
     id: 11,
     cardImg: "greek-moussaka.jpg",
     cardHeading: "Mango Powder",
-    rating: [4.8, 112],
-    calories: "450",
-    cookingTime: "90",
-    ingredients: [
-      "2 large eggplants",
-      "500g ground lamb",
-      "2 onions",
-      "400g crushed tomatoes",
-      "Cinnamon, allspice, nutmeg",
-      "BÃ©chamel sauce (butter, flour, milk)",
-      "Parmesan cheese"
-    ],
-    steps: [
-      "Slice and salt eggplant, fry until golden.",
-      "Cook lamb with onions, tomatoes and spices.",
-      "Layer eggplant then meat in baking dish.",
-      "Prepare bÃ©chamel and pour over top.",
-      "Bake at 180Â°C for 40 min until golden."
-    ],
-    cardParagraph: "Greece's greatest casserole â€” layers of silky eggplant, spiced lamb and creamy bÃ©chamel baked to golden perfection.",
-    numberOfPeople: 6,
-    cookingLevel: "Hard",
-    perfectWith: ["Greek Salad", "Red Wine", "Crusty Bread"],
-    cuisine: "Greek"
+    rating: [4.7, 89],
+    sizes:[["0","2500g"], ["0","500g"], ["0","1kg"]],
+    cardParagraph: "Made from premium ripe mangoes, this finely ground powder delivers authentic fruity flavor, perfect for smoothies, desserts, baking, and healthy recipes."
+ 
+    
   },
   {
     id: 12,
     cardImg: "shakshuka.jpg",
     cardHeading: "Lemon Powder",
     rating: [4.7, 89],
-    calories: "280",
-    cookingTime: "25",
-    ingredients: [
-      "6 eggs",
-      "400g crushed tomatoes",
-      "1 red bell pepper",
-      "2 onions",
-      "Cumin, paprika, cayenne",
-      "Garlic",
-      "Fresh parsley",
-      "Olive oil"
-    ],
-    steps: [
-      "SautÃ© onions and peppers in olive oil.",
-      "Add garlic and spices, cook 2 min.",
-      "Pour in tomatoes, simmer 10 min.",
-      "Make wells and crack eggs into sauce.",
-      "Cover and cook until whites are set. Garnish with parsley."
-    ],
-    cardParagraph: "Eggs poached in a spiced, vibrant tomato sauce. A North African and Middle Eastern morning ritual that works at any hour.",
-    numberOfPeople: 4,
-    cookingLevel: "Easy",
-    perfectWith: ["Crusty Bread", "Feta Cheese", "Olives"],
-    cuisine: "Mediterranean"
+    sizes:[["0","2500g"], ["0","500g"], ["0","1kg"]],
+    cardParagraph: "Pure lemon powder with a refreshing citrus taste, ideal for beverages, cooking, baking, and seasoning without artificial additives or preservatives."
+ 
+    
   },
   {
     id: 13,
     cardImg: "hummus.jpg",
     cardHeading: "Melon Powder",
     rating: [4.7, 200],
-    calories: "180",
-    cookingTime: "15",
-    ingredients: [
-      "2 cans chickpeas",
-      "4 tbsp tahini",
-      "2 lemons (juice)",
-      "3 garlic cloves",
-      "Ice cold water",
-      "Olive oil",
-      "Salt, cumin",
-      "Paprika for garnish"
-    ],
-    steps: [
-      "Blend chickpeas with tahini and lemon juice.",
-      "Add garlic, salt and cumin.",
-      "Drizzle in cold water while blending until super smooth.",
-      "Taste and adjust seasoning.",
-      "Serve with olive oil, paprika and whole chickpeas."
-    ],
-    cardParagraph: "The ancient dip that has conquered the world. Silky smooth, lemony, and impossibly easy to make at home â€” far better than store-bought.",
-    numberOfPeople: 6,
-    cookingLevel: "Easy",
-    perfectWith: ["Pita Bread", "Falafel", "Veggies"],
-    cuisine: "Lebanese"
+    sizes:[["0","2500g"], ["0","500g"], ["0","1kg"]],
+    cardParagraph: "A naturally sweet fruit powder made from fresh melons, perfect for smoothies, desserts, yogurt, and nutritious everyday recipes."
+    
+   
   },
   {
     id: 14,
     cardImg: "lamb-kofta.jpg",
     cardHeading: "Watermelon Powder",
     rating: [4.8, 91],
-    calories: "340",
-    cookingTime: "35",
-    ingredients: [
-      "500g ground lamb",
-      "1 onion (grated)",
-      "Parsley, mint",
-      "Cumin, paprika, coriander",
-      "Greek yogurt, cucumber, dill (for tzatziki)",
-      "Garlic",
-      "Lemon"
-    ],
-    steps: [
-      "Mix lamb with grated onion, herbs and spices.",
-      "Shape into oval patties or cylinders.",
-      "Grill on high heat for 4 min per side.",
-      "Make tzatziki: yogurt, cucumber, dill, garlic, lemon.",
-      "Serve kofta with tzatziki and warm pita."
-    ],
-    cardParagraph: "Herb-laden spiced lamb patties grilled to juicy perfection, paired with cool, tangy tzatziki. The Mediterranean's favorite street food.",
-    numberOfPeople: 4,
-    cookingLevel: "Easy",
-    perfectWith: ["Pita Bread", "Salad", "Tzatziki"],
-    cuisine: "Greek"
+    sizes:[["0","2500g"], ["0","500g"], ["0","1kg"]],
+    cardParagraph: "Crafted from fresh watermelon, this vibrant fruit powder adds refreshing natural flavor and nutrition to drinks, desserts, and healthy meals."
+  
+    
   },
   {
     id: 15,
     cardImg: "pasta-alla-norma.jpg",
     cardHeading: "Banana Powder",
     rating: [4.6, 77],
-    calories: "390",
-    cookingTime: "40",
-    ingredients: [
-      "400g rigatoni",
-      "2 large eggplants",
-      "400g crushed tomatoes",
-      "4 garlic cloves",
-      "Fresh basil",
-      "Ricotta salata",
-      "Olive oil",
-      "Salt, red pepper flakes"
-    ],
-    steps: [
-      "Cube and fry eggplant in olive oil until golden.",
-      "SautÃ© garlic, add tomatoes, simmer 20 min.",
-      "Cook pasta al dente.",
-      "Combine pasta with sauce and eggplant.",
-      "Top with torn basil and grated ricotta salata."
-    ],
-    cardParagraph: "Sicily's operatic pasta. Fried eggplant and sweet tomato sauce crowned with salty ricotta â€” a simple recipe that hits every note perfectly.",
-    numberOfPeople: 4,
-    cookingLevel: "Easy",
-    perfectWith: ["White Wine", "Salad", "Garlic Bread"],
-    cuisine: "Italian"
+    sizes:[["0","2500g"], ["0","500g"], ["0","1kg"]],
+    cardParagraph: "Smooth, naturally sweet banana powder packed with essential nutrients, ideal for shakes, baby food, baking, and wholesome recipes."
+ 
+    
   },
  
    ],
@@ -219,29 +115,10 @@ function Recipe() {
     cardImg: "korean-bibimbap.jpg",
     cardHeading: "Loaded Banana Chips",
     rating: [4.8, 155],
-    calories: "430",
-    cookingTime: "45",
-    ingredients: [
-      "2 cups cooked rice",
-      "Beef bulgogi (thinly sliced marinated beef)",
-      "Spinach, bean sprouts, carrots, mushrooms",
-      "Fried egg",
-      "Gochujang (red chili paste)",
-      "Sesame oil",
-      "Soy sauce, garlic"
-    ],
-    steps: [
-      "SautÃ© each vegetable separately with garlic.",
-      "Marinate and cook beef in soy, sesame, sugar.",
-      "Put rice in hot stone bowl or regular bowl.",
-      "Arrange vegetables and beef around the bowl.",
-      "Top with fried egg and gochujang, mix before eating."
-    ],
-    cardParagraph: "Korea's beautiful bowl of contrast and harmony. Mixed rice with vibrant vegetables, spiced beef and a runny egg â€” eat it with a generous swirl of gochujang.",
-    numberOfPeople: 2,
-    cookingLevel: "Medium",
-    perfectWith: ["Kimchi", "Doenjang Jjigae", "Barley Tea"],
-    cuisine: "Korean"
+    sizes:[["0","2500g"], ["0","500g"], ["0","1kg"]],
+    cardParagraph: "Crispy banana chips coated with delicious flavors for the perfect balance of crunch and taste, making every bite irresistibly satisfying."
+    
+   
   },
   
 
@@ -252,29 +129,10 @@ function Recipe() {
     cardImg: "malaysian-rendang.jpg",
     cardHeading: "Customized Chocolate",
     rating: [4.9, 145],
-    calories: "460",
-    cookingTime: "150",
-    ingredients: [
-      "1 kg beef (short rib or chuck)",
-      "400ml coconut milk",
-      "Lemongrass, galangal, ginger",
-      "Kaffir lime leaves",
-      "Toasted coconut (kerisik)",
-      "Chilies, turmeric",
-      "Shallots, garlic"
-    ],
-    steps: [
-      "Blend shallots, garlic, ginger, galangal and chilies.",
-      "Fry paste until fragrant.",
-      "Add beef and coconut milk.",
-      "Simmer until liquid reduces completely â€” can take 2 hours.",
-      "Add kerisik and kaffir lime, continue until beef is dark and dry-fried."
-    ],
-    cardParagraph: "Malaysia and Indonesia's greatest achievement. Beef slow-cooked until the coconut milk has completely absorbed, leaving intensely flavored, caramelized, tender meat.",
-    numberOfPeople: 6,
-    cookingLevel: "Hard",
-    perfectWith: ["Nasi Lemak", "Ketupat", "Acar"],
-    cuisine: "Malaysian"
+    sizes:[["0","2500g"], ["0","500g"], ["0","1kg"]],
+    cardParagraph: "Create your perfect chocolate with premium ingredients, personalized flavors, and custom toppings for a truly unique and memorable sweet experience."
+
+   
   },
   
 
@@ -286,60 +144,19 @@ function Recipe() {
     cardImg: "jamaican-jerk-chicken.jpg",
     cardHeading: "Olive Oil (500ml)",
     rating: [4.9, 195],
-    calories: "380",
-    cookingTime: "60",
-    ingredients: [
-      "1 kg chicken pieces",
-      "Scotch bonnet peppers",
-      "Allspice (pimento)",
-      "Thyme, garlic, ginger",
-      "Soy sauce, brown sugar",
-      "Cinnamon, nutmeg",
-      "Green onions",
-      "Lime juice"
-    ],
-    steps: [
-      "Blend all jerk marinade ingredients.",
-      "Coat chicken deeply and marinate overnight.",
-      "Grill over charcoal on low-medium heat.",
-      "Cook slow, turning often, 45â€“50 min.",
-      "Serve with rice and peas and festival bread."
-    ],
-    cardParagraph: "Jamaica's fiery, smoky grilled chicken â€” marinated in a complex blend of scotch bonnet and allspice. Addictive beyond reason.",
-    numberOfPeople: 4,
-    cookingLevel: "Medium",
-    perfectWith: ["Rice & Peas", "Festival", "Coleslaw"],
-    cuisine: "Jamaican"
+    sizes:[["0","2500g"], ["0","500g"], ["0","1kg"]],
+    cardParagraph: "Cold-pressed extra virgin olive oil with a rich aroma and smooth flavor, perfect for cooking, salads, and supporting a healthy lifestyle."
+   
+   
   },
   {
     id: 22,
     cardImg: "caribbean-goat-curry.jpg",
     cardHeading: "Olive Oil (750ml)",
     rating: [4.8, 88],
-    calories: "420",
-    cookingTime: "120",
-    ingredients: [
-      "1 kg goat meat",
-      "Caribbean curry powder",
-      "Scotch bonnet pepper",
-      "Thyme, garlic, ginger",
-      "2 onions",
-      "Potato",
-      "Coconut milk",
-      "Green onions"
-    ],
-    steps: [
-      "Marinate goat in curry powder, garlic and thyme overnight.",
-      "Brown in oil with onions.",
-      "Add water and scotch bonnet, slow cook 1.5 hours.",
-      "Add potato and coconut milk.",
-      "Simmer until thick and meat is tender."
-    ],
-    cardParagraph: "A rich, intoxicating goat curry with deep Caribbean soul. The slow cooking transforms tough goat into something transcendently tender.",
-    numberOfPeople: 6,
-    cookingLevel: "Hard",
-    perfectWith: ["Roti", "Rice", "Plantain"],
-    cuisine: "Jamaican"
+    sizes:[["0","2500g"], ["0","500g"], ["0","1kg"]],
+    cardParagraph: "Premium extra virgin olive oil carefully extracted to preserve its natural nutrients, delivering exceptional taste and quality in every drop."
+ 
   },
   
     ],
@@ -347,6 +164,7 @@ function Recipe() {
   
 
     }
+    const[currentItemPrice,setCurrentItemPrice] = useState(0)
 
     const allRecipeItemsArray = [... recipeItems['Dried Fruits'], ... recipeItems['Fruit Powders'], ... recipeItems['Snacks'], ... recipeItems['Customized Chocolate'], ... recipeItems['Oils']]
 
@@ -355,10 +173,8 @@ function Recipe() {
     const [showFullRecipePage, setShowFullRecipePage] = useState(false)
     const [fullRecipeD , setFullRecipeD] = useState({
                                 cardImg: img1, cardHeading: "",
-                                rating:["",""], sizes:["", "", ""],
-                                price:"", storage:"Store in a cool and dry place",
-                                cookingTime: "",uses:["Snacking", "Baking", "Smoothies"],
-                                features:["","",""],
+                                rating:["",""], sizes:[["0","2500g"], ["0","500g"], ["0","1kg"]],
+                                 uses:["Snacking", "Baking", "Smoothies"],
                                 cardParagraph: ""})
     
     const [slectedRecipeCategory,setSlectedRecipeCategory] = useState('All Products')
@@ -395,39 +211,40 @@ function Recipe() {
                             </div>
 
                             <div className='detailSectionRightSide'>
+                              <div className='MobileViewImg'></div>
                               <h2>{fullRecipeD.cardHeading}</h2>
                               <div className='rightSideRating'><span><FaStar /></span>{fullRecipeD.rating[0]} - {fullRecipeD.rating[1]} Reviews</div>
-                              <p className='rightSidePrice'>Price:<span>{fullRecipeD.price}</span></p>
+                              <p className='rightSidePrice'>Price:<span>{fullRecipeD.sizes[currentItemPrice][0]}$</span></p>
                                 <div className='rightSideSizeofItem'>
                                   <p>Size:</p>
                                   {fullRecipeD.sizes.map((item, index)=>{
                                     return(
-                                      <span key={index}>{item}</span>
+                                      <span className={`${index == currentItemPrice? "active" : ""}`} key={index} onClick={()=>setCurrentItemPrice(index)}>{item[1]}</span>
                                     )
                                   })}
                                 </div>
                               <p className='rightSideMainP'>{fullRecipeD.cardParagraph}</p>
-                              <div className='MobileViewImg'></div>
+                              
                               <div className='rightSideFeatures'>
                                 
                                     <div>
                                       <span><GoSun /></span>
-                                      <p>{fullRecipeD.features[0]}</p>
+                                      <p>100% Natural</p>
                                     </div>
 
                                     <div>
                                       <span><BsStars /></span>
-                                      <p>{fullRecipeD.features[1]}</p>
+                                      <p>Premium Quality</p>
                                     </div>
 
                                     <div>
                                       <span><FaCanadianMapleLeaf /></span>
-                                      <p>{fullRecipeD.features[2]}</p>
+                                      <p>Preservative-Free</p>
                                     </div>
 
                                     <div>
                                       <span><MdWorkspacePremium  /></span>
-                                      <p>{fullRecipeD.features[3]}</p>
+                                      <p>Quality Assured</p>
                                     </div>
                                   
                               </div>
