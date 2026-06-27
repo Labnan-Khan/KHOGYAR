@@ -36,7 +36,7 @@ function Recipe() {
                                 {
                                   cardImg: img1, cardHeading: "Dried Banana",
                                 rating:[4.9, 210], sizes:[["1300","250g"], ["2300","500g"], ["4000","1kg"]],
-                                cardParagraph: "Enjoy the tropical sweetness of premium dried mango slices, packed with vitamins, fiber, and natural goodness for a delicious and healthy everyday snack."},
+                                cardParagraph: "Made from ripe bananas, these naturally dried slices deliver a satisfying crunch and wholesome energy without artificial colors, flavors, or preservatives."},
 
                                 {
                                   cardImg: img1, cardHeading: "Dried Cherry",
