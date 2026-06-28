@@ -179,8 +179,7 @@
 .hoemPageHeroSec .heroSectionLeftSide .heroBtnSec button:nth-child(1) span{
     background-color: white;
     color: #C29C3C;
-    font-size: 20px;
-    padding: 10px;
+
 }
 
 .homePage .homePageFiveSection{
@@ -615,14 +614,29 @@
     .homePage .hoemPageHeroSec .heroSectionLeftSide{
         width: 90%;
         justify-content: center;
-        align-items: center;
+        align-items: start;
     }
 
+    .homePage .hoemPageHeroSec .heroSectionLeftSide p{
+        text-align: start;
+    }
     .homePage .hoemPageHeroSec .heroSectionLeftSide h1{
-        text-align: center;
+        /* text-align: center; */
         width: 100%;
     }
 
+.hoemPageHeroSec .heroSectionLeftSide .heroBtnSec button:nth-child(1){
+    width: auto;
+}
+.hoemPageHeroSec .heroSectionLeftSide .heroBtnSec button span{
+    font-size: 17px;
+}
+.hoemPageHeroSec .heroSectionLeftSide .heroBtnSec button{
+    width: auto ;
+    font-size: 13px;
+    gap: 5px;
+    padding-right: 6px;
+}
 
 .homePage .hoemPageHeroSec .heroSectionRightSide{
     width: 90%;
