@@ -52,7 +52,7 @@ function BRJournal() {
 
 
 const articlesDataArray = [
-  ,
+  
 
   {
     id: 40,
@@ -107,7 +107,7 @@ const articlesDataArray = [
           "KHOGYAR exists to make the extraordinary origin known to those who will value it",
           "Origin is the luxury. The origin is extraordinary."
         ]
-      }
+      }      
     ],
     sources: [
       {
@@ -2634,7 +2634,7 @@ const [isHovered, setIsHovered] = useState(null);
             <h1 className='startingH1tag'>Khogyar Journal</h1>
             <p className='ptagAfterH1tag'>Stories, memories, and growing wisdom from the heart of Balochistan.</p>
           </div>
-          <div className='journelHeroSecRightSec'></div>
+          {/* <div className='journelHeroSecRightSec'></div> */}
         </div>
         {/* <div className='brCategaroBtnSec'>
             <div className={`${articalCategoreyBtn == "journal"? " active": "" }`} onClick={()=> setArticalCategoreyBtn("journal")}>BoriRoots Journal</div>

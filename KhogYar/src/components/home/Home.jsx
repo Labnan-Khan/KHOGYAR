@@ -17,6 +17,10 @@ import signatureImg2 from '../../assets/signatureProductImg2.jpg'
 import signatureImg3 from '../../assets/signatureProductImg3.jpg'
 import signatureImg4 from '../../assets/signatureProductImg4.jpg'
 import heroVideo from '../../assets/heroSectionVideo.mp4'
+import FollowUs from '../FollowUs/FollowUs'
+import { TfiWrite } from 'react-icons/tfi'
+import { FaPhoneAlt, FaShoppingCart } from 'react-icons/fa'
+// import { HiOutlineShoppingBag } from "react-icons/hi";
 
 function Home() {
 
@@ -70,11 +74,11 @@ function Home() {
           <p className='headingP'>Balochistan Harvest 2025</p>
           <h1>From the Valleys of Pakistan to the <span> World's Finest tables.</span></h1>
             
-          {/* <p>Bringing extraordinary, rare harvests from Pakistan's mountains and valleys to discerning connoisseurs worldwide.</p> */}
+          <p>Bringing extraordinary, rare harvests from Pakistan's mountains and valleys to discerning connoisseurs worldwide.</p>
 
           <div className='heroBtnSec'>
-            <button>PRODUCTS</button>
-            <button>CONTACT US</button>
+            <button><span><FaShoppingCart /></span>EXPLORE PRODUCTS</button>
+            <button><span><FaPhoneAlt /></span> CONTACT US</button>
           </div>
         </div>
 
@@ -173,6 +177,8 @@ function Home() {
             <p className={`${(currentVallayItem == 2)? "active" : ""}`} onClick={()=>setCurrentVallayItem(2)}>Balochistan</p>
             <p className={`${(currentVallayItem == 3)? "active" : ""}`} onClick={()=>setCurrentVallayItem(3)}>KPK</p>
             <p className={`${(currentVallayItem == 4)? "active" : ""}`} onClick={()=>setCurrentVallayItem(4)}>Punjab</p>
+            <p className='VallaySectionMobileBtn'> Explore More</p>
+            
           </div>
 
           <div className='vallaySectionRight'>
@@ -180,10 +186,13 @@ function Home() {
               <h6>{vallayItems[currentVallayItem].side}</h6>
               <h3>{vallayItems[currentVallayItem].name}</h3>
               <p>{vallayItems[currentVallayItem].detail}</p>
+              <div className='vallayDetailSectionBtn'>  <span><TfiWrite /> </span>Explore Articles</div>
             </div>
             <div className='vallaySetionRightImg'>
               <div style={{backgroundImage: `url(${vallayItems[currentVallayItem].img})` }}></div>
             </div>
+            
+            
           </div>
 
         </div>
@@ -228,7 +237,7 @@ function Home() {
         </div>
       </div>
 
-      <Testimonial />
+      <FollowUs />
 
       <div className='globelMap'>
 
@@ -239,6 +248,7 @@ function Home() {
         </div>
       </div>
 
+      <Testimonial />
 
     </div>
 

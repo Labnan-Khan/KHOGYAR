@@ -16,7 +16,7 @@ function FollowUs() {
     
         <div className='follUs'>
           <h1 className='startingH1tag'>Join the Journey</h1>
-          <p className='ptagAfterH1tag'>Become part of the Bori Roots family. Subscribe for updates, 
+          <p className='ptagAfterH1tag'>Become part of the Khogyar family. Follow for updates, 
             share your stories, and help us grow our community.
           </p>
 
@@ -48,7 +48,7 @@ function FollowUs() {
             
           </div>
 
-          <div className='subscribeSec'>
+          {/* <div className='subscribeSec'>
             <div className='subInputSec'>
               <div>
                 <span><FiMessageSquare /></span>
@@ -58,8 +58,8 @@ function FollowUs() {
             </div>
 
             <p><div><BsLockFill /></div> We respect your Privacy. No spam, ever.</p>
-          </div>
-          <p>Follow us and be part of our journey</p>
+          </div> */}
+          {/* <p>Follow us and be part of our journey</p> */}
           <div className='follUsLogo'>
             <div className='logoSec' >
               <a href="https://x.com/rayzmedia_?s=21"  target="_blank" rel="noopener noreferrer"><div className='log1'><PiXLogo /></div></a>

@@ -17,13 +17,13 @@
 .homePage .headingP{
     font-size: 20px;
     color: rgb(160, 158, 158);
-    /* text-align: center; */
+    text-align: center;
     width: 80%;
 }
 
 .homePage .hoemPageHeroSec{
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.086);
+    /* background-color: rgba(220, 9, 9, 0.989); */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,11 +41,11 @@
     inset: 0;
     z-index: -1;
     overflow: hidden;
-    /* background-color: black; */
+    /* background-color: white; */
     display: flex;
     justify-content: end;
     align-items: center;
-    background-image: url(../../assets/herosectionImg.png);
+    /* background-image: url(../../assets/herosectionImg.png); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -63,17 +63,14 @@
 
 
 .homePage .hoemPageHeroSec .heroSectionRightSide{
-    width: 30%;
+    width: 40%;
     aspect-ratio: 12/12;
-    /* border: 3px solid #C29C3C; */
-    background-image: url(../../assets/heroImgForRightSide.png);
+    background-image: url(../../assets/homepageherorightsideImg.png);
     background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
     /* box-shadow: 0px 0px 10px #C29C3C; */
-    /* filter: drop-shadow(0px 0px 5px #C29C3C); */
+    filter: drop-shadow(0px 10px 2px black);
 }
 
 .homePage .hoemPageHeroSec .heroSectionLeftSide{
@@ -96,6 +93,7 @@
     color: gold;
     font-size: 15px;
     text-shadow: 0px 0px 1px black;
+    text-align: start;
 }
 
 .hoemPageHeroSec .heroSectionLeftSide .headingDiv{
@@ -108,10 +106,11 @@
 }
 
 .hoemPageHeroSec .heroSectionLeftSide  h1{
-    width: 100%;
+    width: 80%;
     text-align: start;
-    font-size: clamp(2rem, 5vw, 10rem);
-    background: linear-gradient(to right, #b39341, #C29C3C);
+    /* font-size: clamp(2rem, 5vw, 10rem); */
+    font-size: 2rem;
+    background: linear-gradient(to left, white, #fab300);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip:text;
@@ -120,8 +119,8 @@
 
 .hoemPageHeroSec .heroSectionLeftSide  h1 span{
     background: none;
-    -webkit-text-fill-color: #efd3a5;
-    color: rgb(77, 29, 1);
+    -webkit-text-fill-color: white;
+    color: white;
 }
 
 .hoemPageHeroSec .heroSectionLeftSide .heroBtnSec{
@@ -134,12 +133,20 @@
 
 .hoemPageHeroSec .heroSectionLeftSide .heroBtnSec button{
     font-size: 15px;
-    padding: 10px;
+    font-weight: 200;
+    /* padding: 10px; */
     border: 1px solid #C29C3C;
     color: rgb(252, 251, 251);
     background-color: black;
     cursor: pointer;
     border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 10px; */
+    overflow: hidden;
+    width: 170px;
+    padding-right: 20px;
 
     &:hover{
         border: 1px solid #C29C3C;
@@ -147,14 +154,33 @@
     }
 }
 
+.hoemPageHeroSec .heroSectionLeftSide .heroBtnSec button span{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #c29c3c;
+    color: white;
+    padding: 10px;
+}
+
 .hoemPageHeroSec .heroSectionLeftSide .heroBtnSec button:nth-child(1){
-    background-color: #C29C3C;
-    border: 1px solid #C29C3C;
+    /* background-color: #C29C3C; */
+    border: 1px solid white;
+    color: #C29C3C;
     box-shadow: none;
+    width: 210px;
+    padding-right: 10px;
     &:hover{
-        background-color: white;
-        color: #C29C3C;
+        color: white;
     }
+}
+
+.hoemPageHeroSec .heroSectionLeftSide .heroBtnSec button:nth-child(1) span{
+    background-color: white;
+    color: #C29C3C;
+    font-size: 20px;
+    padding: 10px;
 }
 
 .homePage .homePageFiveSection{
@@ -379,6 +405,41 @@
     font-size: 25px;
 }
 
+.homePage .homeValleys .valleySection .vallaySectionRight .vallayDetailSection .vallayDetailSectionBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #C29C3C;
+    color: white;
+    font-size: 18px;
+    padding-right: 10px;
+    gap: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+    &:hover{
+        /* background-color: #C29C3C; */
+        color: #C29C3C;
+    }
+}
+
+.homePage .homeValleys .valleySection .vallaySectionRight .vallayDetailSection .vallayDetailSectionBtn span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #C29C3C;
+    font-size: 25px;
+    font-weight: 900;
+    padding: 10px;
+    border-right: 2px solid #C29C3C;
+}
+
+.homePage .homeValleys .valleySection .VallaySectionMobileBtn{
+    display: none;
+}
+
 .vallaySetionRightImg{
     width: 50%;
     display: flex;
@@ -545,10 +606,26 @@
 
 
 @media (max-width:768px){
-
+    .homePage .hoemPageHeroSec{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
     .homePage .hoemPageHeroSec .heroSectionLeftSide{
         width: 90%;
+        justify-content: center;
+        align-items: center;
     }
+
+    .homePage .hoemPageHeroSec .heroSectionLeftSide h1{
+        text-align: center;
+    }
+
+
+.homePage .hoemPageHeroSec .heroSectionRightSide{
+    width: 90%;
+}
 
     .fiveImgSection{
     width: 100%;
@@ -577,6 +654,19 @@
 
     .homePage .homeValleys .valleySection .vallaySectionRight .vallaySetionRightImg{
         width: 90%;
+    }
+
+
+    .homePage .homeValleys .valleySection .vallaySectionRight .vallayDetailSection .vallayDetailSectionBtn{
+    display: none;
+    }
+    .mobileModeBtnSection{
+        width: 90%;
+        display: flex;
+        align-items: center;
+    }
+    .homePage .homeValleys .valleySection .VallaySectionMobileBtn{
+    display: flex;
     }
 
     .homePage .homeProductShowcase .showcaseOItemSec{
