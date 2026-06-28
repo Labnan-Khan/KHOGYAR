@@ -612,7 +612,7 @@
         text-align: center;
     }
     .homePage .hoemPageHeroSec .heroSectionLeftSide{
-        width: 90%;
+        width: 95%;
         justify-content: center;
         align-items: start;
     }
@@ -627,15 +627,15 @@
 
 .hoemPageHeroSec .heroSectionLeftSide .heroBtnSec button:nth-child(1){
     width: auto;
+    background-color: #C29C3C;
+    color: white;
 }
 .hoemPageHeroSec .heroSectionLeftSide .heroBtnSec button span{
-    font-size: 17px;
+    display: none;
 }
 .hoemPageHeroSec .heroSectionLeftSide .heroBtnSec button{
-    width: auto ;
-    font-size: 13px;
-    gap: 5px;
-    padding-right: 6px;
+    width: auto;
+    padding: 10px;
 }
 
 .homePage .hoemPageHeroSec .heroSectionRightSide{
