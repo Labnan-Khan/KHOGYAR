@@ -4,8 +4,8 @@ import heroImg1 from '../../assets/heroImg1.jpeg'
 import heroImg2 from '../../assets/heroImg2.jpg'
 import heroImg3 from '../../assets/heroImg3.jpg'
 import heroImg4 from '../../assets/heroImg4.webp'
-import { FaArrowRightLong } from 'react-icons/fa6'
-import { GiFruitBowl } from 'react-icons/gi'
+import { FaArrowRightLong, FaMountain } from 'react-icons/fa6'
+import { GiClick, GiFruitBowl } from 'react-icons/gi'
 import vallayimg1 from '../../assets/vallayimg1.jpeg'
 import vallayimg2 from '../../assets/vallayimg2.jpg'
 import vallayimg3 from '../../assets/vallayimg3.jpg'
@@ -20,8 +20,12 @@ import heroVideo from '../../assets/heroSectionVideo.mp4'
 import FollowUs from '../FollowUs/FollowUs'
 import { TfiWrite } from 'react-icons/tfi'
 import { FaPhoneAlt, FaShoppingCart } from 'react-icons/fa'
+import { BsFillLightningChargeFill } from 'react-icons/bs'
+import { PiChartLineUpBold, PiLeafBold, PiMountainsBold, PiPlantBold } from 'react-icons/pi'
 // import { HiOutlineShoppingBag } from "react-icons/hi";
-
+import { TbWorld } from "react-icons/tb";
+import { VscWorkspaceTrusted } from "react-icons/vsc";
+import { CiMountain1 } from "react-icons/ci";
 function Home() {
 
       const heroImgsArray = [heroImg1, heroImg2, heroImg3, heroImg4]
@@ -71,24 +75,66 @@ function Home() {
         
 
         <div className='heroSectionLeftSide'>
-          <p className='headingP'>Balochistan Harvest 2025</p>
+          <p className='headingP'> <span><PiLeafBold /></span>Balochistan Harvest 2025</p>
           <h1>From the Valleys of Pakistan to the <span> World's Finest tables.</span></h1>
             
-          <p>Bringing extraordinary, rare harvests from Pakistan's mountains and valleys to discerning connoisseurs worldwide.</p>
+          <p className='heroP'>Bringing extraordinary, rare harvests from Pakistan's mountains and valleys to discerning connoisseurs worldwide.</p>
 
           <div className='heroBtnSec'>
             <button><span><FaShoppingCart /></span>EXPLORE PRODUCTS</button>
             <button><span><FaPhoneAlt /></span> CONTACT US</button>
+          </div>
+          <div className='herheadindClintShowcaseSec'>
+                <div className='imgSecofClinte'>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span>50K+</span>
+                </div>
+                <p>Happy Customers 50K+</p>
           </div>
         </div>
 
         <div className='heroSectionRightSide'>
           
         </div>
-        <div className='heroVideoSec'>
-          {/* <video src={heroVideo} autoPlay muted loop></video> */}
-        </div>
 
+        <div className='HeroBottomSection'>
+
+            <div className='exploreFotter'>
+
+          <div className='explorefotterItem'>
+            <span><TbWorld /></span>
+            <div>
+                <h5>Trusted Worldwide</h5>
+              <p>Loved by Customers in 40+ countries</p>
+            </div>
+            
+          </div>
+          <div className='exploreFotterLine'></div>
+          <div className='explorefotterItem'>
+            <span><VscWorkspaceTrusted /></span>
+            <div>
+              <h5>Premum Harvest</h5>
+              <p>Handpicked from the pure regions of Pakistan</p>
+            </div>
+          
+          </div>
+          <div className='exploreFotterLine'></div>
+          <div className='explorefotterItem'>
+            <span><PiPlantBold /></span>
+            <div>
+              <h5>Always Fresh</h5>
+              <p>From our land to your table, with pride</p>
+            </div>
+            
+          </div>
+
+         </div>
+         
+        </div>
+         
       </div>
 
       <div className='homePageFiveSection'>
